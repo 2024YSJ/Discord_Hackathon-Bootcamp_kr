@@ -361,10 +361,26 @@ class HackathonBot:
         """KT 에이블스쿨 주요소식 페이지에서 모집 공고를 가져옵니다."""
         try:
             # 공지 JSON API가 막혀 있어 주요소식(MC00000058) HTML 페이지를 파싱
+            # GitHub Actions(AWS IP)에서 403이 발생할 수 있음 - 브라우저 헤더로 우회 시도
+            h = self.headers.copy()
+            h.update({
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+                "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
+                "Accept-Encoding": "gzip, deflate, br",
+                "Referer": "https://aivle.kt.co.kr/",
+                "Sec-Fetch-Dest": "document",
+                "Sec-Fetch-Mode": "navigate",
+                "Sec-Fetch-Site": "same-origin",
+                "Sec-Fetch-User": "?1",
+                "Upgrade-Insecure-Requests": "1",
+            })
             res = requests.get(
                 "https://aivle.kt.co.kr/home/main/goMenuPage?mcd=MC00000058",
-                headers=self.headers, timeout=15
+                headers=h, timeout=15
             )
+            if res.status_code == 403:
+                print("KT 에이블스쿨: 서버에서 접근 차단됨 (IP 제한 추정), 건너뜁니다.")
+                return []
             res.raise_for_status()
             soup = BeautifulSoup(res.text, 'html.parser')
             results = []
