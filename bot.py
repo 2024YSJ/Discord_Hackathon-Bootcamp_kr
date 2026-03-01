@@ -179,20 +179,25 @@ class HackathonBot:
 
     def fetch_devevent(self):
         try:
-            now = datetime.now()
-            url = f"https://raw.githubusercontent.com/brave-people/Dev-Event/master/end_event/{now.year}/{str(now.year)[2:]}_{str(now.month).zfill(2)}.md"
-            res = requests.get(url, timeout=15)
+            # README.md에 현재 진행 중/예정 행사 목록이 있음 (end_event/는 종료된 행사)
+            res = requests.get(
+                "https://raw.githubusercontent.com/brave-people/Dev-Event/master/README.md",
+                headers=self.headers, timeout=15
+            )
             if res.status_code == 200:
-                results = []
+                results, seen = [], set()
+                keywords = ['해커톤', 'hackathon', '공모전', '경진대회', '부트캠프', 'bootcamp', '교육', 'kdt', '양성']
                 for m in re.finditer(r'__\[([^\]]+)\]\((https?://[^\)]+)\)__', res.text):
                     title, link = m.group(1), m.group(2)
-                    target_keywords = ['해커톤', 'hackathon', '공모전', '경진대회', '부트캠프', 'bootcamp', '교육', 'kdt', '양성']
-                    if any(k in title.lower() for k in target_keywords):
+                    if link in seen:
+                        continue
+                    if any(k in title.lower() for k in keywords):
+                        seen.add(link)
                         icon = "🎓" if any(b in title.lower() for b in ['부트캠프', '교육', 'kdt']) else "🇰🇷"
                         results.append({"title": f"{icon} [데브이벤트] {title}", "url": link, "host": "DevEvent", "date": "상세 확인"})
                 return results
-        except:
-            pass
+        except Exception as e:
+            print(f"DevEvent 수집 실패: {e}")
         return []
 
     def fetch_ssafy(self):
@@ -200,17 +205,33 @@ class HackathonBot:
         try:
             url = "https://www.ssafy.com/ksp/servlet/swp.board.controller.SwpBoardServlet"
             params = {"p_process": "select-board-list", "p_tabseq": "226504", "p_pageno": "1"}
-            res = requests.get(url, params=params, headers=self.headers, timeout=15)
+            h = self.headers.copy()
+            h.update({
+                "X-Requested-With": "XMLHttpRequest",
+                "Accept": "application/json, text/javascript, */*; q=0.01",
+                "Accept-Language": "ko-KR,ko;q=0.9",
+            })
+            res = requests.get(url, params=params, headers=h, timeout=15)
+            if res.status_code != 200:
+                print(f"SSAFY 응답 오류: {res.status_code}")
+                return []
             soup = BeautifulSoup(res.text, 'html.parser')
+            # 실제 구조: <li class="_top"> 안에 <span class="td td1"><a>, <span class="td td2">
             results = []
-            for row in soup.select('table.tbl-list tbody tr'):
-                subj_td = row.select_one('td.subj')
-                if not subj_td:
+            for li in soup.select('li._top'):
+                td1 = li.select_one('span.td1')
+                if not td1:
                     continue
-                title = subj_td.get_text(strip=True)
+                a = td1.find('a')
+                if not a:
+                    continue
+                # <i class="ico_noti"> 태그([공지] 텍스트) 제거 후 제목 추출
+                for ico in a.find_all('i'):
+                    ico.decompose()
+                title = a.get_text(strip=True)
                 if not any(k in title for k in ['모집', '공고', '기수']):
                     continue
-                seq_match = re.search(r'goViewPage\((\d+)\)', str(row))
+                seq_match = re.search(r'goViewPage\((\d+)\)', a.get('href', ''))
                 if not seq_match:
                     continue
                 seq = seq_match.group(1)
@@ -218,8 +239,8 @@ class HackathonBot:
                     f"https://www.ssafy.com/ksp/servlet/swp.board.controller.SwpBoardServlet"
                     f"?p_process=select-board-view&p_tabseq=226504&p_seq={seq}"
                 )
-                tds = row.find_all('td')
-                date = tds[-1].get_text(strip=True) if len(tds) >= 2 else '미정'
+                date_span = li.select_one('span.td2')
+                date = date_span.get_text(strip=True) if date_span else '미정'
                 results.append({
                     "title": f"[SSAFY] {title}",
                     "url": detail_url,
@@ -237,44 +258,65 @@ class HackathonBot:
             res = requests.get("https://woowacourse.io/notice", headers=self.headers, timeout=15)
             soup = BeautifulSoup(res.text, 'html.parser')
             script = soup.find('script', id='__NEXT_DATA__')
-            if not script:
-                return []
-            blocks = (
-                json.loads(script.string)
-                .get('props', {})
-                .get('pageProps', {})
-                .get('recordMap', {})
-                .get('block', {})
-            )
-            results = []
-            for block_id, block_data in blocks.items():
-                value = block_data.get('value', {})
-                if value.get('type') != 'page':
-                    continue
-                props = value.get('properties', {})
-                title_arr = props.get('title', [])
-                if not title_arr:
-                    continue
-                title = title_arr[0][0] if title_arr else ''
-                if not title or not any(k in title for k in ['모집', '지원', '과정', '기수', '선발']):
-                    continue
-                # 날짜: Notion 속성 키가 동적이므로 YYYY로 시작하는 문자열 값 탐색
-                date = '미정'
-                for key, val in props.items():
-                    if key == 'title' or not val:
+            keywords = ['모집', '지원', '과정', '기수', '선발']
+            if script:
+                data = json.loads(script.string)
+                blocks = (
+                    data.get('props', {})
+                    .get('pageProps', {})
+                    .get('recordMap', {})
+                    .get('block', {})
+                )
+                results = []
+                for block_id, block_data in blocks.items():
+                    value = block_data.get('value', {})
+                    if value.get('type') != 'page':
                         continue
-                    try:
-                        candidate = val[0][0]
-                        if isinstance(candidate, str) and re.match(r'\d{4}', candidate):
-                            date = candidate[:10]
-                            break
-                    except (IndexError, TypeError):
-                        pass
+                    props = value.get('properties', {})
+                    title_arr = props.get('title', [])
+                    if not title_arr:
+                        continue
+                    title = title_arr[0][0] if title_arr else ''
+                    if not title or not any(k in title for k in keywords):
+                        continue
+                    date = '미정'
+                    for key, val in props.items():
+                        if key == 'title' or not val:
+                            continue
+                        try:
+                            candidate = val[0][0]
+                            if isinstance(candidate, str) and re.match(r'\d{4}', candidate):
+                                date = candidate[:10]
+                                break
+                        except (IndexError, TypeError):
+                            pass
+                    results.append({
+                        "title": f"[우테코] {title}",
+                        "url": f"https://woowacourse.io/notice/{block_id}",
+                        "host": "우아한테크코스",
+                        "date": date,
+                    })
+                if results:
+                    return results
+
+            # fallback: 페이지 내 링크 직접 추출
+            results = []
+            seen = set()
+            for a in soup.find_all('a', href=True):
+                title = a.get_text(strip=True)
+                href = a['href']
+                if not title or not any(k in title for k in keywords):
+                    continue
+                if href in seen:
+                    continue
+                seen.add(href)
+                if not href.startswith('http'):
+                    href = 'https://woowacourse.io' + href
                 results.append({
                     "title": f"[우테코] {title}",
-                    "url": f"https://woowacourse.io/notice/{block_id}",
+                    "url": href,
                     "host": "우아한테크코스",
-                    "date": date,
+                    "date": "상세 확인",
                 })
             return results
         except Exception as e:
@@ -316,25 +358,34 @@ class HackathonBot:
         return results
 
     def fetch_kt_aivle(self):
-        """KT 에이블스쿨 공지사항에서 모집 공고를 가져옵니다."""
+        """KT 에이블스쿨 주요소식 페이지에서 모집 공고를 가져옵니다."""
         try:
-            url = "https://aivle.kt.co.kr/home/brd/bbs/listAtclJson"
-            params = {"bbsCd": "NOTICE", "pageIndex": "1"}
-            res = requests.get(url, params=params, headers=self.headers, timeout=15)
+            # 공지 JSON API가 막혀 있어 주요소식(MC00000058) HTML 페이지를 파싱
+            res = requests.get(
+                "https://aivle.kt.co.kr/home/main/goMenuPage?mcd=MC00000058",
+                headers=self.headers, timeout=15
+            )
             res.raise_for_status()
+            soup = BeautifulSoup(res.text, 'html.parser')
             results = []
-            for item in res.json().get("returnList", []):
-                title = item.get("atclTitle", "")
-                if not any(k in title for k in ['모집', '공고', '기수', '과정', '선발']):
+            keywords = ['모집', '공고', '기수', '과정', '선발']
+            for subj_div in soup.select('div.td.subject'):
+                a = subj_div.find('a')
+                if not a:
                     continue
-                seq = item.get("atclSn", "")
+                title = a.get_text(strip=True)
+                if not any(k in title for k in keywords):
+                    continue
+                seq_match = re.search(r"readPtlBbsAtcl\('(\d+)'\)", a.get('href', ''))
+                seq = seq_match.group(1) if seq_match else ''
+                # 날짜: 같은 행(부모)의 형제 div에서 추출
+                row = subj_div.parent
+                date_div = row.select_one('div.td.date') if row else None
+                date = date_div.get_text(strip=True) if date_div else '상세 확인'
                 detail_url = (
-                    f"https://aivle.kt.co.kr/home/brd/bbs/view?bbsCd=NOTICE&atclSn={seq}"
-                    if seq else "https://aivle.kt.co.kr/home/main/goMenuPage?mcd=MC00000061"
+                    f"https://aivle.kt.co.kr/home/brd/bbs/view?bbsCd=NEWS&atclSn={seq}"
+                    if seq else "https://aivle.kt.co.kr/home/main/goMenuPage?mcd=MC00000058"
                 )
-                date = item.get("regDttm", "미정")
-                if date and len(date) > 10:
-                    date = date[:10]
                 results.append({
                     "title": f"[KT 에이블스쿨] {title}",
                     "url": detail_url,
@@ -354,9 +405,9 @@ class HackathonBot:
         for i in range(0, len(items), 10):
             chunk = items[i:i+10]
             embeds = [{"title": f"✨ {h['title']}", "url": h['url'], "color": 5814783,
-                       "fields": [{"name": "플랫폼", "value": h['host'], "inline": True},
-                                  {"name": "마감/일정", "value": str(h['date']), "inline": True}]}
-                      for h in chunk]
+                    "fields": [{"name": "플랫폼", "value": h['host'], "inline": True},
+                                {"name": "마감/일정", "value": str(h['date']), "inline": True}]}
+                    for h in chunk]
             requests.post(WEBHOOK_URL, json={
                 "content": "🚀 **새로운 소식이 도착했습니다!**" if i == 0 else "",
                 "embeds": embeds
