@@ -1138,3 +1138,6 @@ AI로 손 안대고 코딩하는 바이브, 느낌알죠? (바이브 코딩)
 Codorra
 ImmerseGT
 HackPrinceton Spring 2026
+RocketHacks 2026
+HackDavis 2026 Hackathon
+[부트텐트] 생성형AI와 챗GPT를 활용한 빅데이터 분석 & 자동화 시스템 구축
