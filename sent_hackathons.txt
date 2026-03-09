@@ -1145,3 +1145,5 @@ BISV Hacks 2026
 UWB Hacks 26: The Future!
 [부트텐트] [IBM x RedHat] AI Transformation - AX Academy
 United Hacks V7
+ViTAL Hacks 2026
+Hack Dearborn 2025
