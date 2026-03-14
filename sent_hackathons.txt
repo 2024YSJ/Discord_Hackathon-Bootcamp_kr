@@ -1173,3 +1173,5 @@ JACHacks 2026
 🇰🇷 [캠퍼스픽] 2026 스마일게이트 인디게임 창작 공모전 &lt;IndieGo>
 [부트텐트] 인공지능 응용시스템 개발자
 [부트텐트] MBC AI 데이터 저널리즘 전문가 과정
+Innovation Hacks
+MasseyHacks
