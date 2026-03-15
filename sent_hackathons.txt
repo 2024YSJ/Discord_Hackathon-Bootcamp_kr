@@ -1175,3 +1175,4 @@ JACHacks 2026
 [부트텐트] MBC AI 데이터 저널리즘 전문가 과정
 Innovation Hacks
 MasseyHacks
+LovHack Season 2
