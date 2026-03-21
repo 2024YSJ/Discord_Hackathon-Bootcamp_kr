@@ -1198,3 +1198,5 @@ Google Build with AI Hackathon
 [부트텐트] AI 기반 의료 이미지 분석 및 질병 판독
 [부트텐트] AI기반 기업교육 실무 인재 양성 및 취업과정
 [부트텐트] Ocean DX Academy
+Google Build with AI Hackathon 
+🇰🇷 [데브이벤트] SNOWFLAKE Hackathon 2026
