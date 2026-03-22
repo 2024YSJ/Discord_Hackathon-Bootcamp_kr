@@ -1200,3 +1200,5 @@ Google Build with AI Hackathon
 [부트텐트] Ocean DX Academy
 Google Build with AI Hackathon 
 🇰🇷 [데브이벤트] SNOWFLAKE Hackathon 2026
+MVHacks 9.0
+Google Build with AI Hackathon 
