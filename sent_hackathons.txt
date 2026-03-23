@@ -1202,3 +1202,7 @@ Google Build with AI Hackathon
 🇰🇷 [데브이벤트] SNOWFLAKE Hackathon 2026
 MVHacks 9.0
 Google Build with AI Hackathon 
+Google Build with AI Hackathon 
+HackVision
+[부트텐트] 심층 데이터 분석을 통한 개인 맞춤형 예측 자동화 서비스 솔루션 개발 과정(Hadoop, Tableau, TensorFlow)
+[부트텐트] 한 방에 끝내는 AI : 왕초보를 위한 인공지능 A-Z
