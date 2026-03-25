@@ -1211,3 +1211,16 @@ Google Build with AI Hackathon
 🎓 [데브이벤트] STACK-UP 서울 코딩 연합 동아리 부트캠프 멤버모집
 🇰🇷 [캠퍼스픽] Casual Degen Game Hackathon
 🇰🇷 [캠퍼스픽] [국립중앙과학관] 2026 AI HACK CAMP
+Google Build with AI Hackathon 
+HACKMESA 2.0
+Victor Hacks
+[부트텐트] Microsoft Copilot 프롬프트 엔지니어링 : AI로 LLM 마스터 클래스
+[부트텐트] 실전 바이오헬스 데이터 활용 : 기초 데이터 튜토리얼부터 환자 정보 분석까지
+[부트텐트] (AI 프롬프트-심화) 에이전트를 위한 프롬프트 엔지니어링
+[부트텐트] 직장인을 위한 실무 데이터 역량 레벨업 코스
+[부트텐트] [서울시 매력일자리] AI 콘텐츠 개발자 양성 과정
+[부트텐트] (AI 프롬프트-기초) LLM 활용 극대화를 위한 프롬프트 엔지니어링
+[부트텐트] SQL 개발자(SQLD) 자격증 취득
+[부트텐트] 아진산업 채용예정자 부트캠프 AI·빅데이터 전문가 양성과정
+[부트텐트] n8n으로 만드는 고객 대응 에이전트
+[부트텐트] 키움 디지털 아카데미(Kiwoom Digital Academy)
