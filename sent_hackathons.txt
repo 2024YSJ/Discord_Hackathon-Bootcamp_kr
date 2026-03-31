@@ -1245,3 +1245,7 @@ DeveloperWeek New York 2026 Hackathon
 Google Build with AI Hackathon 
 Splunk AI Hackathon
 [부트텐트] 제약바이오 품질 및 데이터 분석 31일 완성 전문가 과정
+Google Build with AI Hackathon 
+IBM x UNSA Hackathon
+🇰🇷 [데브이벤트] 2026 성남시 공공데이터 활용 시각화 경진대회
+🇰🇷 [캠퍼스픽] 2026 춘계통합학술대회 대학생 ERP 아이디어 공모전
