@@ -1253,3 +1253,5 @@ Google Build with AI Hackathon
 🇰🇷 [캠퍼스픽] 2026 관광데이터 활용 공모전(웹ㆍ앱 개발)
 [부트텐트] 청년 AI·Big Data 아카데미
 [부트텐트] AI 에이전트(Agentic AI) 전문가 취업캠프
+Google Build with AI Hackathon 
+🇰🇷 [캠퍼스픽] 2026년 전국 통합데이터 활용 공모전
