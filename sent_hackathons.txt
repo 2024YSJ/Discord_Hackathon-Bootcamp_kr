@@ -1263,3 +1263,4 @@ Google Build with AI Hackathon
 [부트텐트] 반도체 Data Science 재직자 역량강화 기본과정
 [부트텐트] AI 비전(Vision) 카메라 활용 협동로봇 경로 최적화 실무 과정
 [부트텐트] NEXT:AI DEVELOPER 온라인 부트캠프
+Google Build with AI Hackathon 
