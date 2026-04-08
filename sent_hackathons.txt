@@ -1276,3 +1276,5 @@ JSS Navotthana 2.0
 [부트텐트] 생성형 AI 기반 서비스 개발자 양성
 [부트텐트] [MS] AI 에이전트 부트캠프
 [부트텐트] [IBM] AI 에이전트 부트캠프
+Google Build with AI Hackathon 
+🇰🇷 [캠퍼스픽] [과학기술정보통신부] 2026 글로벌 피우다프로젝트(SW개발 경진대회)
