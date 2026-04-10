@@ -1282,3 +1282,6 @@ Google Build with AI Hackathon
 Build with MeDo Hackathon 
 🇰🇷 [캠퍼스픽] 2026 울산 로컬콘텐츠 페스타 공모전
 [부트텐트] LG U+ Why Not SW캠프
+Google Build with AI Hackathon 
+[부트텐트] AI+ 아카데미
+[부트텐트] 생성형 AI 활용 분석 및 개발 with 바이브코딩 & AIoT
