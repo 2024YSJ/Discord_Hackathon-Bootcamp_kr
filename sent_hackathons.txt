@@ -1285,3 +1285,10 @@ Build with MeDo Hackathon
 Google Build with AI Hackathon 
 [부트텐트] AI+ 아카데미
 [부트텐트] 생성형 AI 활용 분석 및 개발 with 바이브코딩 & AIoT
+Google Build with AI Hackathon 
+🇰🇷 [데브이벤트] Flutter Seoul Meetup 바이브코딩 해커톤
+🇰🇷 [데브이벤트] Build with AI x GDG Busan 2026 - AI Hackathon
+🇰🇷 [데브이벤트] 미쳐라, 만들어라, 증명하라: Build with AI Hackathon 2026 in Daejeon
+🇰🇷 [캠퍼스픽] 2026 울산 로컬콘텐츠페스타 공모전
+🇰🇷 [캠퍼스픽] 2026 올릭스 IP 크리에이터톤
+🇰🇷 [캠퍼스픽] 모두의 AI를 위한 &lt;전국민AI 경진대회> AI 루키 대회
