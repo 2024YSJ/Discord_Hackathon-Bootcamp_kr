@@ -1292,3 +1292,4 @@ Google Build with AI Hackathon
 🇰🇷 [캠퍼스픽] 2026 울산 로컬콘텐츠페스타 공모전
 🇰🇷 [캠퍼스픽] 2026 올릭스 IP 크리에이터톤
 🇰🇷 [캠퍼스픽] 모두의 AI를 위한 &lt;전국민AI 경진대회> AI 루키 대회
+HackNation
