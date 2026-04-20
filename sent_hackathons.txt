@@ -1313,3 +1313,6 @@ GlobeHack
 [부트텐트] 빅데이터 분석 준전문가(ADSP) 국가공인 자격증
 [부트텐트] 코디세이 AI 네이티브
 Grizzly Hacks III
+🇰🇷 [데브이벤트] Built with Opus 4.7: a Claude Code hackathon
+[부트텐트] Creative AI : Computer Vision
+[부트텐트] AI를 활용한 데이터 분석 취업 캠프
