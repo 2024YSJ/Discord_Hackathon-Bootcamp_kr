@@ -1316,3 +1316,5 @@ Grizzly Hacks III
 🇰🇷 [데브이벤트] Built with Opus 4.7: a Claude Code hackathon
 [부트텐트] Creative AI : Computer Vision
 [부트텐트] AI를 활용한 데이터 분석 취업 캠프
+KiroHacks Cal Poly
+[부트텐트] 소프티어 부트캠프
