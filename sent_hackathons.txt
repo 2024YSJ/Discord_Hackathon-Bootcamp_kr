@@ -1318,3 +1318,6 @@ Grizzly Hacks III
 [부트텐트] AI를 활용한 데이터 분석 취업 캠프
 KiroHacks Cal Poly
 [부트텐트] 소프티어 부트캠프
+🇰🇷 [캠퍼스픽] 2026 발달장애인 권역별 기능경기대회
+🇰🇷 [캠퍼스픽] 2026 현대오토에버 배리어프리 앱개발 콘테스트 공모전
+[부트텐트] 엔비디아(NVIDIA) Jetson 기반 Physical AI(Sim-to-Real) 실무 프로젝트 과정
