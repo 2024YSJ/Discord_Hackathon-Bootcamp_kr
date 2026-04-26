@@ -1336,3 +1336,4 @@ Google Cloud Rapid Agent Hackathon
 🇰🇷 [데브이벤트] 넥슨 패스트 트랙 해커톤 '2026 메커톤'
 [부트텐트] 삼성청년SW·AI아카데미
 [부트텐트] Microsoft Data School
+Youth Code x AI
