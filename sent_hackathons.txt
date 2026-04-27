@@ -1337,3 +1337,8 @@ Google Cloud Rapid Agent Hackathon
 [부트텐트] 삼성청년SW·AI아카데미
 [부트텐트] Microsoft Data School
 Youth Code x AI
+[부트텐트] 통계적 사고와 머신러닝 입문
+[부트텐트] AI by Hand: 내 손으로 이해하는 딥러닝 기초수학
+[부트텐트] 제조 데이터를 활용한 AI 이해와 예측 모델 구축
+[부트텐트] 비전공자를 위한 AI 운동장: AI 기초체력 UP하기!
+[부트텐트] 트랜스포머와 자연어처리를 활용한 챗봇 시스템 구축
