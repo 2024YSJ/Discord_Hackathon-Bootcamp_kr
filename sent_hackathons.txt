@@ -1365,3 +1365,5 @@ USAII Global Hackathon 2026
 🇰🇷 [캠퍼스픽] [STK 2026] 제1회 GenAI 활용 광고영상 공모전
 🇰🇷 [캠퍼스픽] 제4회 문화체육관광 인공지능·데이터 활용 공모전
 [부트텐트] AI를 활용한 의료데이터 분석과 처리 시작하기
+🇰🇷 [캠퍼스픽] [STK 2026] 제1회 GenAI 활용 STK 광고영상 공모전
+🇰🇷 [캠퍼스픽] Mantle: The Turing Test Hackathon 2026
