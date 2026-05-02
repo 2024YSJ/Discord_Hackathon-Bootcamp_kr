@@ -1367,3 +1367,5 @@ USAII Global Hackathon 2026
 [부트텐트] AI를 활용한 의료데이터 분석과 처리 시작하기
 🇰🇷 [캠퍼스픽] [STK 2026] 제1회 GenAI 활용 STK 광고영상 공모전
 🇰🇷 [캠퍼스픽] Mantle: The Turing Test Hackathon 2026
+🇰🇷 [데브이벤트] SOLANA 글로벌 온라인 해커톤: 프론티어
+🇰🇷 [데브이벤트] Vibe Coding HACKATHON
