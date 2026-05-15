@@ -1404,3 +1404,4 @@ Hack for Humanity | Summer 2026
 [부트텐트] 데이터 기반 의사결정 역량 강화 과정
 [부트텐트] AI 팩토리 GPU 가속 MLOps 스쿨
 🇰🇷 [캠퍼스픽] [데이콘] JB금융그룹 Fin:AI Challenge (~6/12)
+UiPath AgentHack
