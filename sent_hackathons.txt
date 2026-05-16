@@ -1405,3 +1405,4 @@ Hack for Humanity | Summer 2026
 [부트텐트] AI 팩토리 GPU 가속 MLOps 스쿨
 🇰🇷 [캠퍼스픽] [데이콘] JB금융그룹 Fin:AI Challenge (~6/12)
 UiPath AgentHack
+🇰🇷 [캠퍼스픽] 2026 데이터+AI 크리에이터 캠프
