@@ -1406,3 +1406,4 @@ Hack for Humanity | Summer 2026
 🇰🇷 [캠퍼스픽] [데이콘] JB금융그룹 Fin:AI Challenge (~6/12)
 UiPath AgentHack
 🇰🇷 [캠퍼스픽] 2026 데이터+AI 크리에이터 캠프
+🇰🇷 [캠퍼스픽] Y-MAS Project 오프라인 경진대회 (의료AI 경진대회)
