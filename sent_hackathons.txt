@@ -1409,3 +1409,4 @@ UiPath AgentHack
 🇰🇷 [캠퍼스픽] Y-MAS Project 오프라인 경진대회 (의료AI 경진대회)
 Hack Days Ankara: Build with Gemini
 RevenueCat Shipaton 2026
+🇰🇷 [캠퍼스픽] AX Arena
