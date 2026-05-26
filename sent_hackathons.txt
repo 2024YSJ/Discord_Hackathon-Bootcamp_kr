@@ -1410,3 +1410,4 @@ UiPath AgentHack
 Hack Days Ankara: Build with Gemini
 RevenueCat Shipaton 2026
 🇰🇷 [캠퍼스픽] AX Arena
+STEMINATE HACKS 2026
