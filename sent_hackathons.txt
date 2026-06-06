@@ -1486,3 +1486,6 @@ DevNetwork [API + Cloud + AI] Hackathon 2026
 [부트텐트] 세미 휴머노이드 피지컬 AI 부트캠프
 [부트텐트] NVIDIA AI 전문인력 양성과정
 [부트텐트] AI 서비스 운영을 위한 클라우드 데이터 엔지니어 과정
+🇰🇷 [캠퍼스픽] 제2회 NAMUHX 해커톤 — AI 웰니스 로봇 서비스 기획 공모
+[부트텐트] AI Agent Challenge
+[부트텐트] 하네스 엔지니어링 기반 AI Agent 트랙
