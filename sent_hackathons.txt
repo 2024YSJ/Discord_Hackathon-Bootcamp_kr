@@ -1511,3 +1511,5 @@ HackDays Delhi
 🇰🇷 [데브이벤트] ACPC 2026 · AWS × 코드트리 대학생 프로그래밍 경진대회
 UC Berkeley AI Hackathon 2026
 🇰🇷 [캠퍼스픽] AIUS 2026 MZ 페르소나 공모전
+🇰🇷 [캠퍼스픽] iM금융그룹 제4회 대한민국 청년 인재양성 프로젝트
+🇰🇷 [캠퍼스픽] 제29회 세계평화미술대전 AI & Digital Art 출품작 모집
