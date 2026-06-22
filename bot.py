@@ -3,6 +3,7 @@ import json
 import requests
 import re
 from datetime import datetime
+from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 
 WEBHOOK_URL = os.environ.get('DISCORD_WEBHOOK_URL')
@@ -153,9 +154,12 @@ class HackathonBot:
         )
 
     def fetch_linkareer_bootcamp(self):
-        """링커리어에서 부트캠프 공고를 가져옵니다 (교육 타입, activityTypeID=6)."""
+        """링커리어에서 부트캠프 공고를 가져옵니다.
+        activityTypeID=6(교육 전체)은 영화/예술 강좌까지 600+건 반환하므로
+        '부트캠프' 키워드 검색으로 개발/IT 부트캠프만 좁혀서 가져옵니다.
+        """
         return self._fetch_linkareer(
-            filter_by={"activityTypeID": 6, "status": "OPEN"},
+            filter_by={"q": "부트캠프", "status": "OPEN"},
             label="부트캠프",
         )
 
@@ -413,20 +417,11 @@ class HackathonBot:
                 print(f"부트텐트: HTTP {res.status_code}")
                 return []
 
-            # Next.js RSC 스트림에서 campList 추출: self.__next_f.push([1, "...json..."]) 패턴
-            pushes = re.findall(r'self\.__next_f\.push\((\[.*?\])\)', res.text, re.DOTALL)
-            all_camps = []
-            for p in pushes:
-                if '\\"campList\\"' not in p:
-                    continue
-                try:
-                    inner = json.loads(p)[1]  # 이중 이스케이프 해제
-                    arr_str = self._extract_json_array(inner, 'campList')
-                    if arr_str:
-                        all_camps = json.loads(arr_str)
-                except Exception:
-                    pass
-                break
+            # Next.js RSC 스트림에서 campList 추출.
+            # 데이터는 self.__next_f.push([1, "...이스케이프된 JSON..."]) 안에 들어 있는데
+            # 한 push가 수백 KB라 비탐욕적 정규식으로는 배열이 중간에서 잘린다.
+            # 따라서 campList 위치를 직접 찾아 문자열 리터럴 경계를 정확히 추출한다.
+            all_camps = self._extract_boottent_camps(res.text)
 
             if not all_camps:
                 print("부트텐트: campList 데이터 없음")
@@ -492,6 +487,41 @@ class HackathonBot:
                     return s[start:i + 1]
         return None
 
+    def _extract_boottent_camps(self, html):
+        """부트텐트 Next.js 플라이트 스트림에서 campList 배열을 견고하게 추출합니다."""
+        marker = 'self.__next_f.push([1,'
+        idx = html.find('campList')
+        if idx == -1:
+            return []
+        start = html.rfind(marker, 0, idx)
+        if start == -1:
+            return []
+        try:
+            # 마커 뒤 첫 따옴표가 이스케이프된 JSON 문자열 리터럴의 시작
+            qstart = html.index('"', start + len(marker))
+        except ValueError:
+            return []
+        # 백슬래시 이스케이프를 존중하며 닫는 따옴표를 찾는다
+        i = qstart + 1
+        n = len(html)
+        while i < n:
+            c = html[i]
+            if c == '\\':
+                i += 2
+                continue
+            if c == '"':
+                break
+            i += 1
+        literal = html[qstart:i + 1]
+        try:
+            flight = json.loads(literal)  # 이스케이프 해제
+            arr_str = self._extract_json_array(flight, 'campList')
+            if arr_str:
+                return json.loads(arr_str)
+        except Exception as e:
+            print(f"부트텐트 campList 파싱 실패: {e}")
+        return []
+
     def fetch_kt_aivle(self):
         """KT 에이블스쿨 주요소식 페이지에서 모집 공고를 가져옵니다."""
         try:
@@ -549,36 +579,52 @@ class HackathonBot:
         return []
       
     def fetch_wevity(self):
-        """위비티에서 공모전/해커톤 공고를 가져옵니다."""
-        try:
-            results = []
-            # 카테고리: c=2 (공모전), c=4 (해커톤)
-            for cat, label in [(2, "공모전"), (4, "해커톤")]:
+        """위비티에서 IT/SW 관련 공모전·해커톤 공고를 가져옵니다.
+        사이트 개편으로 a.tit 구조가 사라져 div.tit>a 기반으로 파싱하며,
+        IT 관련 카테고리(cidx=20 웹/모바일/IT, 21 게임/SW, 22 과학/공학)만 조회합니다.
+        """
+        results = []
+        seen = set()
+        categories = [(20, "웹/모바일/IT"), (21, "게임/SW"), (22, "과학/공학")]
+        for cidx, label in categories:
+            try:
                 res = requests.get(
-                    f"https://www.wevity.com/?c={cat}",
+                    f"https://www.wevity.com/?c=find&s=1&gub=1&cidx={cidx}",
                     headers=self.headers, timeout=15
                 )
+                res.encoding = 'utf-8'
                 soup = BeautifulSoup(res.text, 'html.parser')
                 for li in soup.select('ul.list > li'):
-                    a = li.select_one('a.tit')
+                    if 'top' in (li.get('class') or []):  # 헤더 행 제외
+                        continue
+                    a = li.select_one('div.tit > a')
                     if not a:
                         continue
-                    title = a.get_text(strip=True)
-                    href = a['href']
+                    href = a.get('href', '')
+                    if not href:
+                        continue
                     if not href.startswith('http'):
-                        href = 'https://www.wevity.com' + href
-                    date_span = li.select_one('span.day')
-                    date = date_span.get_text(strip=True) if date_span else '상세 확인'
+                        href = 'https://www.wevity.com/' + href.lstrip('/')
+                    if href in seen:
+                        continue
+                    seen.add(href)
+                    # 제목에서 신규/SPECIAL 등 배지 span 제거
+                    for span in a.select('span'):
+                        span.extract()
+                    title = a.get_text(strip=True)
+                    if not title:
+                        continue
+                    day = li.select_one('div.day')
+                    date = re.sub(r'\s+', ' ', day.get_text(' ', strip=True)) if day else '상세 확인'
                     results.append({
                         "title": f"[위비티/{label}] {title}",
                         "url": href,
                         "host": "위비티",
                         "date": date,
                     })
-            return results
-        except Exception as e:
-            print(f"위비티 수집 실패: {e}")
-        return []
+            except Exception as e:
+                print(f"위비티 {label} 수집 실패: {e}")
+        return results
   
     def fetch_datzine(self):
       """대티즌에서 공모전/해커톤 공고를 가져옵니다."""
@@ -685,12 +731,17 @@ class HackathonBot:
           )
           if res.status_code == 200:
               items = res.json().get('data', {}).get('data', [])
-              return [{
-                  "title": i['title'],
-                  "url": f"https://unstop.com/hackathons/{i['public_url']}",
-                  "host": "Unstop",
-                  "date": i.get('end_date', 'N/A'),
-              } for i in items]
+              results = []
+              for i in items:
+                  # seo_url은 완전한 절대 URL, public_url은 이미 'hackathons/' 접두사를 포함
+                  url = i.get('seo_url') or f"https://unstop.com/{i['public_url']}"
+                  results.append({
+                      "title": i['title'],
+                      "url": url,
+                      "host": "Unstop",
+                      "date": i.get('end_date', 'N/A'),
+                  })
+              return results
       except Exception as e:
           print(f"Unstop 수집 실패: {e}")
       return []
@@ -722,7 +773,134 @@ class HackathonBot:
       except Exception as e:
           print(f"Lablab.ai 수집 실패: {e}")
       return []
-  
+
+    def fetch_contestkorea(self):
+        """콘테스트코리아에서 IT/SW 관련 공모전·해커톤 공고를 가져옵니다."""
+        list_url = "https://www.contestkorea.com/sub/list.php?int_gbn=1"
+        try:
+            res = requests.get(list_url, headers=self.headers, timeout=15)
+            res.encoding = 'utf-8'
+            soup = BeautifulSoup(res.text, 'html.parser')
+            # IT/개발/데이터 관련 키워드로 필터링 (사이트가 전 분야 공고를 반환하므로)
+            keywords = ['해커톤', '해커', '아이디어', 'ai', '데이터', '코딩', '개발',
+                        'sw', '소프트', '앱', ' it', '디지털', '메타버스', '빅데이터',
+                        '알고리즘', '테크', '프로그래밍', '아이디어톤']
+            results = []
+            seen = set()
+            for a in soup.find_all('a', href=True):
+                href = a['href']
+                if 'view.php' not in href:
+                    continue
+                raw = a.get_text(' ', strip=True)
+                # 선두의 카테고리 라벨(예: "아이디어•건축•창업 ")과 순위 번호 제거
+                title = re.sub(r'^\S*•\S*\s+', '', raw)
+                title = re.sub(r'^\d+\.?\s*', '', title).strip()
+                if not title:
+                    continue
+                low = title.lower()
+                if not any(k in low for k in keywords):
+                    continue
+                # 절대/상대 href가 섞여 있어 urljoin으로 /sub/ 기준 정확히 결합
+                href = urljoin(list_url, href)
+                if href in seen:
+                    continue
+                seen.add(href)
+                results.append({
+                    "title": f"[콘테스트코리아] {title}",
+                    "url": href,
+                    "host": "콘테스트코리아",
+                    "date": "상세 확인",
+                })
+            return results
+        except Exception as e:
+            print(f"콘테스트코리아 수집 실패: {e}")
+        return []
+
+    def fetch_kstartup(self):
+        """K-Startip(창업진흥원)에서 해커톤/경진대회/챌린지 공고를 가져옵니다."""
+        try:
+            res = requests.get(
+                "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do",
+                headers=self.headers, timeout=15
+            )
+            res.encoding = 'utf-8'
+            soup = BeautifulSoup(res.text, 'html.parser')
+            keywords = ['해커톤', '해커', '경진대회', '챌린지', '공모전', '아이디어', '경진']
+            results = []
+            seen = set()
+            for a in soup.find_all('a', href=True):
+                m = re.search(r'go_view\((\d+)\)', a['href'])
+                if not m:
+                    continue
+                pbanc_sn = m.group(1)
+                if pbanc_sn in seen:
+                    continue
+                text = re.sub(r'\s+', ' ', a.get_text(' ', strip=True))
+                # "사업화 D-15 마감일자 2026-07-07 [제목]" 형태에서 마감일자와 제목 분리
+                date = '상세 확인'
+                dm = re.search(r'마감일자\s*(\d{4}-\d{2}-\d{2})', text)
+                if dm:
+                    date = f"마감: {dm.group(1)}"
+                title = re.sub(r'^\S+\s+D-\d+\s*마감일자\s*\d{4}-\d{2}-\d{2}\s*', '', text)
+                title = re.sub(r'\s*새로운게시글\s*', ' ', title).strip()
+                if not title:
+                    continue
+                if not any(k in title for k in keywords):
+                    continue
+                seen.add(pbanc_sn)
+                results.append({
+                    "title": f"[K-Startup] {title[:80]}",
+                    "url": ("https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do"
+                            f"?schM=view&pbancSn={pbanc_sn}"),
+                    "host": "K-Startup (창업진흥원)",
+                    "date": date,
+                })
+            return results
+        except Exception as e:
+            print(f"K-Startup 수집 실패: {e}")
+        return []
+
+    def fetch_bizinfo(self):
+        """기업마당(bizinfo)에서 해커톤/공모전/경진대회/인재양성 공고를 가져옵니다."""
+        try:
+            res = requests.get(
+                "https://www.bizinfo.go.kr/web/lay1/bbs/S1T122C128/AS/74/list.do",
+                headers=self.headers, timeout=15
+            )
+            res.encoding = 'utf-8'
+            soup = BeautifulSoup(res.text, 'html.parser')
+            keywords = ['해커톤', '공모전', '경진대회', '챌린지', '아이디어',
+                        '아카데미', '양성', '부트캠프', '교육생', '해커']
+            results = []
+            seen = set()
+            for a in soup.find_all('a', href=True):
+                href = a['href']
+                if 'Detail.do' not in href and 'view.do' not in href:
+                    continue
+                title = a.get_text(' ', strip=True)
+                if not title or not any(k in title for k in keywords):
+                    continue
+                if not href.startswith('http'):
+                    href = 'https://www.bizinfo.go.kr' + (href if href.startswith('/') else '/' + href)
+                if href in seen:
+                    continue
+                seen.add(href)
+                # 같은 행에서 신청기간(YYYY-MM-DD ~ YYYY-MM-DD) 추출
+                row = a.find_parent('tr') or a.find_parent('li') or a.parent
+                row_text = re.sub(r'\s+', ' ', row.get_text(' ', strip=True)) if row else ''
+                dm = re.search(r'(\d{4}-\d{2}-\d{2}\s*~\s*\d{4}-\d{2}-\d{2})', row_text)
+                date = dm.group(1) if dm else '상세 확인'
+                results.append({
+                    "title": f"[기업마당] {title}",
+                    "url": href,
+                    "host": "기업마당 (bizinfo)",
+                    "date": date,
+                })
+            return results
+        except Exception as e:
+            print(f"기업마당 수집 실패: {e}")
+        return []
+
     # ─────────────────────────────────────────────────────
     # 유틸리티 및 실행 섹션
     # ─────────────────────────────────────────────────────
@@ -747,20 +925,25 @@ class HackathonBot:
             ("MLH", self.fetch_mlh),
             ("DevEvent", self.fetch_devevent),
             ("CampusPick", self.fetch_campuspick),
-            # ("링커리어 해커톤", self.fetch_linkareer_hackathon),
-            # ("링커리어 부트캠프", self.fetch_linkareer_bootcamp),
+            ("링커리어 해커톤", self.fetch_linkareer_hackathon),
+            ("링커리어 부트캠프", self.fetch_linkareer_bootcamp),
             ("SSAFY", self.fetch_ssafy),
             ("우아한테크코스", self.fetch_woowacourse),
             ("부스트캠프", self.fetch_boostcamp),
             ("KT Cloud TechUp", self.fetch_kt_techup),
             ("KT 에이블스쿨", self.fetch_kt_aivle),
             ("부트텐트", self.fetch_boottent),
-            ("위비티", self.fetch_wevity),           # 국내 공모전 종합
-            ("대티즌", self.fetch_datzine),           # 대학생 공모전
-            ("공모주", self.fetch_gongmo),            # IT/SW 공모전
-            ("과기정통부", self.fetch_msit),          # 정부 공고
+            ("위비티", self.fetch_wevity),            # 국내 IT 공모전 종합
+            ("콘테스트코리아", self.fetch_contestkorea),  # 국내 공모전 종합
+            ("K-Startup", self.fetch_kstartup),       # 정부 창업/경진대회
+            ("기업마당", self.fetch_bizinfo),          # 정부 공모/인재양성
             ("Unstop", self.fetch_unstop),            # 글로벌 해커톤
-            ("Lablab AI", self.fetch_lablab)
+            ("Lablab AI", self.fetch_lablab),
+            # 아래는 사이트 폐쇄/차단으로 비활성화:
+            #   대티즌(SSL 장애), 공모주(도메인 소멸), 과기정통부(JS 렌더링)
+            # ("대티즌", self.fetch_datzine),
+            # ("공모주", self.fetch_gongmo),
+            # ("과기정통부", self.fetch_msit),
         ]
 
         for name, fetcher in tasks:
