@@ -547,7 +547,182 @@ class HackathonBot:
         except Exception as e:
             print(f"KT 에이블스쿨 수집 실패: {e}")
         return []
-
+      
+    def fetch_wevity(self):
+        """위비티에서 공모전/해커톤 공고를 가져옵니다."""
+        try:
+            results = []
+            # 카테고리: c=2 (공모전), c=4 (해커톤)
+            for cat, label in [(2, "공모전"), (4, "해커톤")]:
+                res = requests.get(
+                    f"https://www.wevity.com/?c={cat}",
+                    headers=self.headers, timeout=15
+                )
+                soup = BeautifulSoup(res.text, 'html.parser')
+                for li in soup.select('ul.list > li'):
+                    a = li.select_one('a.tit')
+                    if not a:
+                        continue
+                    title = a.get_text(strip=True)
+                    href = a['href']
+                    if not href.startswith('http'):
+                        href = 'https://www.wevity.com' + href
+                    date_span = li.select_one('span.day')
+                    date = date_span.get_text(strip=True) if date_span else '상세 확인'
+                    results.append({
+                        "title": f"[위비티/{label}] {title}",
+                        "url": href,
+                        "host": "위비티",
+                        "date": date,
+                    })
+            return results
+        except Exception as e:
+            print(f"위비티 수집 실패: {e}")
+        return []
+  
+    def fetch_datzine(self):
+      """대티즌에서 공모전/해커톤 공고를 가져옵니다."""
+      try:
+          res = requests.get(
+              "https://www.datzine.com/contest/list.asp?tp=1",
+              headers=self.headers, timeout=15
+          )
+          soup = BeautifulSoup(res.text, 'html.parser')
+          results = []
+          for tr in soup.select('table.list_type01 tr'):
+              a = tr.select_one('td.tit a')
+              if not a:
+                  continue
+              title = a.get_text(strip=True)
+              href = a.get('href', '')
+              if not href.startswith('http'):
+                  href = 'https://www.datzine.com' + href
+              tds = tr.find_all('td')
+              date = tds[-1].get_text(strip=True) if len(tds) >= 2 else '상세 확인'
+              results.append({
+                  "title": f"[대티즌] {title}",
+                  "url": href,
+                  "host": "대티즌",
+                  "date": date,
+              })
+          return results
+      except Exception as e:
+          print(f"대티즌 수집 실패: {e}")
+      return []
+  
+    def fetch_gongmo(self):
+      """공모주에서 IT/SW 관련 공모전을 가져옵니다."""
+      try:
+          res = requests.get(
+              "https://www.gongmo.com/list/category/it",
+              headers=self.headers, timeout=15
+          )
+          soup = BeautifulSoup(res.text, 'html.parser')
+          results = []
+          for item in soup.select('div.contest_list_item'):
+              a = item.select_one('a')
+              title_el = item.select_one('.contest_title')
+              if not a or not title_el:
+                  continue
+              title = title_el.get_text(strip=True)
+              href = a['href']
+              if not href.startswith('http'):
+                  href = 'https://www.gongmo.com' + href
+              date_el = item.select_one('.contest_date')
+              date = date_el.get_text(strip=True) if date_el else '상세 확인'
+              results.append({
+                  "title": f"[공모주/IT] {title}",
+                  "url": href,
+                  "host": "공모주",
+                  "date": date,
+              })
+          return results
+      except Exception as e:
+          print(f"공모주 수집 실패: {e}")
+      return []
+  
+    def fetch_msit(self):
+      """과기정통부 공고에서 해커톤/공모전 관련 공고를 가져옵니다."""
+      try:
+          res = requests.get(
+              "https://www.msit.go.kr/bbs/list.do?sCode=user&mPid=74&mId=75",
+              headers=self.headers, timeout=15
+          )
+          soup = BeautifulSoup(res.text, 'html.parser')
+          results = []
+          keywords = ['해커톤', '공모전', '경진대회', '챌린지', '공모']
+          for tr in soup.select('table.board_list tbody tr'):
+              a = tr.select_one('td.subject a')
+              if not a:
+                  continue
+              title = a.get_text(strip=True)
+              if not any(k in title for k in keywords):
+                  continue
+              href = a.get('href', '')
+              if not href.startswith('http'):
+                  href = 'https://www.msit.go.kr' + href
+              date_td = tr.select('td')
+              date = date_td[-1].get_text(strip=True) if date_td else '상세 확인'
+              results.append({
+                  "title": f"[과기정통부] {title}",
+                  "url": href,
+                  "host": "과학기술정보통신부",
+                  "date": date,
+              })
+          return results
+      except Exception as e:
+          print(f"과기정통부 수집 실패: {e}")
+      return []
+  
+    def fetch_unstop(self):
+      """Unstop에서 해커톤/공모전 정보를 가져옵니다."""
+      try:
+          res = requests.get(
+              "https://unstop.com/api/public/opportunity/search-result"
+              "?opportunity=hackathons&page=1&size=20",
+              headers={**self.headers, "Accept": "application/json"},
+              timeout=15
+          )
+          if res.status_code == 200:
+              items = res.json().get('data', {}).get('data', [])
+              return [{
+                  "title": i['title'],
+                  "url": f"https://unstop.com/hackathons/{i['public_url']}",
+                  "host": "Unstop",
+                  "date": i.get('end_date', 'N/A'),
+              } for i in items]
+      except Exception as e:
+          print(f"Unstop 수집 실패: {e}")
+      return []
+  
+    def fetch_lablab(self):
+      """Lablab.ai에서 AI 해커톤 정보를 가져옵니다."""
+      try:
+          res = requests.get(
+              "https://lablab.ai/event",
+              headers=self.headers, timeout=15
+          )
+          soup = BeautifulSoup(res.text, 'html.parser')
+          results = []
+          for card in soup.select('a[href^="/event/"]'):
+              title_el = card.select_one('h3')
+              if not title_el:
+                  continue
+              title = title_el.get_text(strip=True)
+              href = 'https://lablab.ai' + card['href']
+              date_el = card.select_one('p.text-sm')
+              date = date_el.get_text(strip=True) if date_el else '상세 확인'
+              results.append({
+                  "title": f"[Lablab AI] {title}",
+                  "url": href,
+                  "host": "Lablab.ai",
+                  "date": date,
+              })
+          return results
+      except Exception as e:
+          print(f"Lablab.ai 수집 실패: {e}")
+      return []
+  
     # ─────────────────────────────────────────────────────
     # 유틸리티 및 실행 섹션
     # ─────────────────────────────────────────────────────
@@ -580,6 +755,12 @@ class HackathonBot:
             ("KT Cloud TechUp", self.fetch_kt_techup),
             ("KT 에이블스쿨", self.fetch_kt_aivle),
             ("부트텐트", self.fetch_boottent),
+            ("위비티", self.fetch_wevity),           # 국내 공모전 종합
+            ("대티즌", self.fetch_datzine),           # 대학생 공모전
+            ("공모주", self.fetch_gongmo),            # IT/SW 공모전
+            ("과기정통부", self.fetch_msit),          # 정부 공고
+            ("Unstop", self.fetch_unstop),            # 글로벌 해커톤
+            ("Lablab AI", self.fetch_lablab)
         ]
 
         for name, fetcher in tasks:
