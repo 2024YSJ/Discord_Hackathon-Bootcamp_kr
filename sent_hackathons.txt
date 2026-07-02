@@ -1789,3 +1789,27 @@ AX 인재전쟁 2026 — OpenAI × 조코딩AX파트너스 채용 해커톤
 COSC Hackweek
 Vibe2Vision
 Cascade - A Cryptic Hunt
+CS Girlies Annual Hackathon - Technology For Wellness
+🇰🇷 [캠퍼스픽] 제4회 스마트축산 AI 경진대회
+★ [전액무료][AI강의][AI부트캠프] AI개발자 양성 모집 ★
+[멀티캠퍼스 부트캠프 아이엠] AI 보안 엔지니어 트랙 수강생 모집 중!
+[멀티캠퍼스 부트캠프 아이엠] 지능형 모빌리티 엔지니어 트랙 수강생 모집
+[멀티캠퍼스 부트캠프 아이엠] AI 프로덕트 매니저 트랙 수강생 모집!
+[멋쟁이사자처럼] 백엔드 Java & Spring 부트캠프 27기
+[부트텐트] [30일 완성] 비개발자도 할 수 있는 바이브 코딩 업무 자동화
+[부트텐트] 채용연계 피지컬 AI 부트캠프
+[부트텐트] K뉴딜아카데미 Let's Grow with LG전자
+[부트텐트] 차세대 LLM 기반 지식증강 생성 AI 이론 과정
+[부트텐트] AI기반 신약 후보물질 탐색실습 과정
+[부트텐트] 건설기계 산업 데이터를 AI로 연결하는  실무형 AI 융합전문가 양성과정
+[콘테스트코리아] 년 시흥시 일상 안전 아이디어 공모전
+[콘테스트코리아] 초심이 AI 영상 공모전
+[콘테스트코리아] 한국전기안전공사 AI영상공모전
+[콘테스트코리아] [성균관대 x AWS] AI 기반 바이오헬스케어 과정
+[K-Startup] 2026년 민관협력 오픈이노베이션 (모두의 챌린지 기후테크) 창업기업 모집공고 민관협력 오픈이노베이션 지원사업 창업진흥원 조회 16,479
+AI Career Hackathon
+Smart School FinTech Innovation Challenge 2026
+AI for Bharat Hackathon 2026 – Build AI Solutions for India's Real Problems
+MSOC 2026 — MSTC Summer of Code Data Science
+Roboauto-2026
+Breaking Bot IPEC
