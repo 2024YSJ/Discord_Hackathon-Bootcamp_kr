@@ -1836,3 +1836,34 @@ Breaking Bot IPEC
 [K-Startup] ( 🏅투자금 3억원!🏅)제8회 창업투자경진대회 B-스타트업챌린지
 Frontend Wars 2026: Build the Future
 Aerothon 2026 - HAL x IITI
+Build with DataHub: The Agent Hackathon
+[멀티캠퍼스 부트캠프 아이엠] AI 에이전트 엔지니어 트랙 수강생 모집
+[멀티캠퍼스 부트캠프 아이엠] AI 데이터 분석 트랙 수강생 모집
+[멀티캠퍼스 부트캠프 아이엠] AI 엔지니어 트랙 수강생 모집
+[내배카드 7월 20일 개강] AWS 자바 풀스택(FastAPI,React) 부트캠프
+[부트텐트] 공공데이터 분석 및 시각화
+[부트텐트] Let's Grow with LG화학 오산
+[부트텐트] Let's Grow with LG디스플레이
+[부트텐트] Let's Grow with LG화학 (LG화학 화치연수원, 여수)
+[부트텐트] Oracle AI Startup Bootcamp 대전창조경제혁신센터
+[부트텐트] 산업학사학위과정
+[부트텐트] AI 기반 바이오헬스케어 전문가 양성과정
+[부트텐트] Oracle AI Startup Bootcamp 우석대학교(전주캠퍼스)
+[부트텐트] 온디바이스 AI 엔지니어링 과정
+[부트텐트] Oracle AI Startup Bootcamp 부산대학교
+[부트텐트] 금융·핀테크 AI 융합 전문가 양성과정
+[콘테스트코리아] 년 보훈 공공데이터·AI 활용 아이디어 공모전
+[콘테스트코리아] Doodll 1st AI Makeathon
+[콘테스트코리아] 년 달서 전국 대학생 AI활용 아이디어 콘테스트
+[K-Startup] 2026년 민관협력 오픈이노베이션 (모두의 챌린지 기후테크) 창업기업 모집공고 민관협력 오픈이노베이션 지원사업 창업진흥원 조회 19,419
+[K-Startup] 화성시 소셜벤처 창업 아이디어 경진대회』 참여(예비)기업 모집 공고
+Agents of Change – National Agentic AI Bootcamp & Buildathon 2026
+Tech-A-Thon 5.0
+AlgoSprint 2026 – Online Coding Challenge
+Hack Synthesis 3.0 - 2026
+International Innovation Challenge 3.0
+Devengers Promptwars 2026
+Vibeathon 6.0 (Vibecoding Hackathon)
+NeuraMorphix HackForge 2026
+SquidHack 2026
+CMR Thinkfest 3.0
