@@ -2024,3 +2024,34 @@ DEMUX 3.0
 DTI Ideathon & Hackathon 2026
 S.T.E.M Jam
 Orchestrix: Newgen x AI Club IITM
+🇰🇷 [캠퍼스픽] [해커톤] 2026 스타트업 영그라운드 MVP 개발 해커톤(~7/30)
+🇰🇷 [캠퍼스픽] 2026 자율주행 해커톤 경진대회(AMET) 안내
+[해커톤] 2026 스타트업 영그라운드 MVP 개발 해커톤(~7/30)
+[토스뱅크] 사이버보안 엔지니어 부트캠프 (공격&방어 기술)
+[코드잇 스프린트] IT 서비스 창업 부트캠프 모집 중
+[코드잇 스프린트] 데이터 분석가 부트캠프 모집 중
+[코드잇 스프린트] Spring 백엔드 부트캠프 모집 중
+[코드잇 스프린트] AI 엔지니어 부트캠프 모집 중
+[코드잇 스프린트] 프론트엔드 8주 단기 심화 부트캠프 모집 중
+[코드잇 스프린트] 프로덕트 디자인 부트캠프 모집 중
+[부트텐트] 2026 전남 AI 교육 AID 30+ 집중캠프
+[부트텐트] 4주 완성 AI 챌린지
+[부트텐트] AI 기초 첫걸음: ChatGPT·Gemini 활용법
+[부트텐트] [예비취업자] 배터리 데이터 분석전문가 과정(Intermediate)
+[부트텐트] 스마트한 세상, AI로 첫 발 내딛기
+[부트텐트] 스마트AI활용지도사과정
+[부트텐트] AI-POT(AI프롬프트활용능력)
+[콘테스트코리아] 국립순천대학교박물관 스테인드글라스 아이디어 공모전
+[콘테스트코리아] 2026 시흥시 관광·축제 AI숏폼 서포터즈 모집
+[콘테스트코리아] AI로 지금 뜨는 트렌드 한번에 모으기 – 공개교육
+[콘테스트코리아] [클래스101/ K-뷰티/마케팅 취준생 필독] 완전 무료로 K-뷰티 디지털 마케터 되는 법
+[K-Startup] [강동구 청년해냄센터] 스타트업 영 그라운드 MVP 개발 해커톤 참가자 모집
+Conquer AI Hackathon – Chapter 1
+CoLab Nation Prompt Engineering Challenge 2026
+Credx Hiring Challenge 2.0
+The Closer- FlytBase Hiring Hackathon
+INNOVIK 6.0 : International Hackathon 2026
+ML Hackathon
+IDEATHON: Spark Before the Code
+PIXEL 3.0
+Adobe University Hackathon 2026
