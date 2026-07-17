@@ -2055,3 +2055,20 @@ ML Hackathon
 IDEATHON: Spark Before the Code
 PIXEL 3.0
 Adobe University Hackathon 2026
+Agentic Cinema: The Blockbuster Hackathon
+🎓 [데브이벤트] KT AIVLE School(에이블스쿨) 10기 AI 개발자/DX 컨설턴트 교육생 모집
+한양대 ERICA 청년도약 인재양성 디스플레이 부트캠프 모집
+[선착순] 데이터 커리어전환, 데이터 분석 부트캠프 58기, 4번의 프로젝트로 실무 종결
+[현대차 로보틱스 사내벤처] '피지컬AI&협동로봇, 로보틱스 엔지니어 양성 부트캠프' (~7/20)
+[부트텐트] 심화_AI Roboflow를 활용한 부유물탐지 시스템 구축과정
+[부트텐트] 방송 전문가와 함께하는 스마트폰 AI 영상제작
+[콘테스트코리아] 제 3회 지센 AI 영상 아트 콘테스트
+[콘테스트코리아] [IT 재능활동] 코드로 언어의 장벽을 낮추다, 조인어스코리아 웹 개발 봉사자 모집 [충원]
+[콘테스트코리아] [전액 무료·교통비 20만원] 2026 대구·경북 청년 AI· DX 전문가 교육
+[K-Startup] 「민관협력 오픈이노베이션 지원」2026년 제2차 방산 스타트업 챌린지(모두의 챌린지-방산) 창업기업 모집공고 민관협력 오픈이노베이션 지원사업 창
+GBT BuildStorm 2026
+BLACKBOX
+H & P PROJECTS Hackathon Global Challenges 2026
+Code O'Clock 2K26
+Build With Bharat 2.0
+Evil Corp CTF 6 Hour Intense Hacking
