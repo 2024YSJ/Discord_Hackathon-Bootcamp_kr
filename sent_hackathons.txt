@@ -2299,3 +2299,52 @@ Promptathon
 [K-Startup] 2026 산업단지 오픈이노베이션프로그램 KICXUP 챌린지 & 로컬 스타트업 모집 공고
 [K-Startup] 「다시 쓰는 성공기」 제14회 재도전 사례 공모전 참가 모집 공고 재도전성공패키지 창업진흥원 조회 10,298
 NexBuildOn Hack 2026
+[K-Startup] 「다시 쓰는 성공기」 제14회 재도전 사례 공모전 참가 모집 공고 재도전성공패키지 창업진흥원 조회 10,303
+[Devfolio] Infinity Hacks 2026
+[Devfolio] Hefty-Hacks
+[Devfolio] .hack '26
+[Devfolio] Road To Devcon
+[Devfolio] DSU DEVHACK 3.0
+[Devfolio] FlutterFlow Champions League Hackathon
+[Devfolio] Origins
+[Devfolio] HyperFusion
+[Devfolio] NexHack 2.0
+[Devfolio] Dora Hack 2.0
+[Devfolio] WebCraft24
+[Devfolio] RevengersHack
+[Devfolio] VENTURE'26
+[Devfolio] HackNex Season 2
+[Devfolio] HackInverse 1.0
+[Devfolio] ETHKochi
+[Devfolio] CodeStorm 2026: FutureForge
+[Devfolio] MUBA Blockchain Hackathon
+[Devfolio] Metamorph 2.0
+[Devfolio] HACKER HOUSE GOA 2026
+[DACON] 2026 Samsung Collegiate Programming Challenge : AI 챌린지
+[DACON] 제3회 풍력발전량 예측 AI 경진대회 - BARAM 2026
+ARC Prize 2026 - Paper Track
+ARC Prize 2026 - ARC-AGI-2
+ARC Prize 2026 - ARC-AGI-3
+Kaggriculture
+Biohub - Cell Tracking During Development
+The Pokémon Company - PTCG AI Battle Challenge Strategy
+AI Agent Security - Multi-Step Tool Attacks
+Predicting Smartphone Addiction
+The Pokémon Company - PTCG AI Battle Challenge Simulation
+[Codeforces] Educational Codeforces Round 193 (Rated for Div. 2)
+[Codeforces] Codeforces Round (Div. 2)
+[Codeforces] Codeforces Round (Div. 3)
+[AtCoder] JPRS Programming Contest 2026#2 (AtCoder Beginner Contest 470)
+[AtCoder] UNIQUE VISION Programming Contest 2026 Summer (AtCoder Regular Contest 226)
+[AtCoder] AtCoder Beginner Contest 471
+[AtCoder] AtCoder Regular Contest 227
+[AtCoder] AtCoder Beginner Contest 472
+[AtCoder] 13th Asprova Programming Contest（AtCoder Heuristic Contest 070）
+[AtCoder] AtCoder Beginner Contest 473
+[AtCoder] AtCoder Beginner Contest 474
+[LeetCode] Biweekly Contest 189
+[LeetCode] Weekly Contest 514
+[CodeChef] Monday Munch - DSA Challenge 014 (Rated)
+[CodeChef] Starters 250
+[CodeChef] Placement Prep Weekends - 02
+[CodeChef] Starters 251
