@@ -901,6 +901,126 @@ class HackathonBot:
             print(f"기업마당 수집 실패: {e}")
         return []
 
+    def fetch_dacon(self):
+        """데이콘(DACON)에서 진행 중인 AI 경진대회 공고를 가져옵니다.
+        경진대회 목록 페이지가 Nuxt SSR로 렌더링되며 데이터가 __NUXT__ 함수 인자로
+        인라인되어 있어(공식 JSON API 없음), 정규식으로 cpt_id/name/기간을 직접 추출합니다.
+        """
+        try:
+            res = requests.get("https://dacon.io/competitions", headers=self.headers, timeout=15)
+            if res.status_code != 200:
+                return []
+            idx = res.text.find("__NUXT__")
+            if idx == -1:
+                return []
+            nuxt = res.text[idx:]
+            now = datetime.now()
+            pattern = re.compile(
+                r'\{cpt_id:(\d+),[^{}]*?name:"([^"]+)"[^{}]*?'
+                r'period_start:"([^"]+)"[^{}]*?period_end:"([^"]+)"[^{}]*?\}'
+            )
+            results, seen = [], set()
+            for cpt_id, name, _start, end in pattern.findall(nuxt):
+                if cpt_id in seen:
+                    continue
+                seen.add(cpt_id)
+                try:
+                    end_dt = datetime.strptime(end, "%Y-%m-%d %H:%M:%S")
+                except ValueError:
+                    continue
+                if end_dt < now:
+                    continue
+                results.append({
+                    "title": f"[DACON] {name}",
+                    "url": f"https://dacon.io/competitions/official/{cpt_id}/overview/",
+                    "host": "데이콘 (DACON)",
+                    "date": f"마감: {end[:10]}",
+                })
+            return results
+        except Exception as e:
+            print(f"데이콘 수집 실패: {e}")
+        return []
+
+    def fetch_devfolio(self):
+        """Devfolio에서 모집 중인 글로벌 해커톤 공고를 가져옵니다."""
+        try:
+            res = requests.get("https://devfolio.co/hackathons", headers=self.headers, timeout=15)
+            if res.status_code != 200:
+                return []
+            soup = BeautifulSoup(res.text, 'html.parser')
+            script = soup.find('script', id='__NEXT_DATA__')
+            if not script:
+                return []
+            data = json.loads(script.string)
+            queries = (
+                data.get('props', {})
+                .get('pageProps', {})
+                .get('dehydratedState', {})
+                .get('queries', [])
+            )
+            results, seen = [], set()
+            for q in queries:
+                hackathons = q.get('state', {}).get('data', {}).get('open_hackathons')
+                if not hackathons:
+                    continue
+                for h in hackathons:
+                    slug = h.get('slug')
+                    name = h.get('name')
+                    if h.get('type') != 'HACKATHON' or not slug or not name or slug in seen:
+                        continue
+                    seen.add(slug)
+                    starts = (h.get('starts_at') or '')[:10]
+                    ends = (h.get('ends_at') or '')[:10]
+                    date_str = f"{starts} ~ {ends}" if starts and ends else "상세 확인"
+                    results.append({
+                        "title": f"[Devfolio] {name}",
+                        "url": f"https://devfolio.co/hackathons/{slug}",
+                        "host": "Devfolio",
+                        "date": date_str,
+                    })
+            return results
+        except Exception as e:
+            print(f"Devfolio 수집 실패: {e}")
+        return []
+
+    def fetch_kaggle(self):
+        """Kaggle 공식 API로 마감되지 않은 경진대회 목록을 가져옵니다.
+        KAGGLE_USERNAME/KAGGLE_KEY 환경 변수가 필요하며 GitHub Actions 시크릿에 이미 설정되어 있습니다.
+        제목에 접두사를 붙이지 않는 이유: 과거 수집분(sent_hackathons.txt)이 접두사 없는 원제목으로
+        저장되어 있어, 접두사를 붙이면 Titanic 등 상시 진행형 Getting-Started 대회가 중복 재알림됩니다.
+        """
+        username = os.environ.get('KAGGLE_USERNAME', '')
+        key = os.environ.get('KAGGLE_KEY', '')
+        if not username or not key:
+            return []
+        try:
+            today = datetime.now().strftime('%Y-%m-%d')
+            res = requests.get(
+                'https://www.kaggle.com/api/v1/competitions/list',
+                params={'sortBy': 'latestDeadline', 'pageSize': 20},
+                auth=(username, key), headers=self.headers, timeout=15,
+            )
+            if res.status_code != 200:
+                print(f"Kaggle API 실패 ({res.status_code})")
+                return []
+            results = []
+            for c in res.json():
+                title = c.get('title', '')
+                deadline = (c.get('deadline') or '')[:10]
+                if not title or (deadline and deadline < today):
+                    continue
+                ref = c.get('ref') or c.get('id', '')
+                results.append({
+                    "title": title,
+                    "url": f"https://www.kaggle.com/competitions/{ref}",
+                    "host": "Kaggle",
+                    "date": deadline or "상세 확인",
+                })
+            return results
+        except Exception as e:
+            print(f"Kaggle 수집 실패: {e}")
+        return []
+
     # ─────────────────────────────────────────────────────
     # 유틸리티 및 실행 섹션
     # ─────────────────────────────────────────────────────
@@ -939,6 +1059,9 @@ class HackathonBot:
             ("기업마당", self.fetch_bizinfo),          # 정부 공모/인재양성
             ("Unstop", self.fetch_unstop),            # 글로벌 해커톤
             ("Lablab AI", self.fetch_lablab),
+            ("Devfolio", self.fetch_devfolio),         # 글로벌 해커톤 (인도/Web3 다수)
+            ("DACON", self.fetch_dacon),               # 국내 AI 경진대회 종합
+            ("Kaggle", self.fetch_kaggle),             # 글로벌 데이터과학 경진대회
             # 아래는 사이트 폐쇄/차단으로 비활성화:
             #   대티즌(SSL 장애), 공모주(도메인 소멸), 과기정통부(JS 렌더링)
             # ("대티즌", self.fetch_datzine),
