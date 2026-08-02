@@ -1022,6 +1022,164 @@ class HackathonBot:
         return []
 
     # ─────────────────────────────────────────────────────
+    # 프로그래밍/알고리즘 경진대회 섹션
+    # ─────────────────────────────────────────────────────
+
+    def fetch_programmers(self):
+        """프로그래머스 공식 대회 API에서 접수 마감 전 경진대회를 가져옵니다."""
+        try:
+            res = requests.get(
+                "https://programmers.co.kr/api/competitions",
+                headers=self.headers, timeout=15,
+            )
+            if res.status_code != 200:
+                return []
+            today = datetime.now().strftime('%Y-%m-%d')
+            results = []
+            for c in res.json().get('competitions', []):
+                end_at = c.get('receiptEndAt') or c.get('endAt') or ''
+                if end_at and end_at[:10] < today:
+                    continue
+                title = c.get('title', '')
+                href = c.get('href', '')
+                if not title or not href:
+                    continue
+                results.append({
+                    "title": f"🇰🇷 [프로그래머스] {title}",
+                    "url": f"https://programmers.co.kr{href}",
+                    "host": "Programmers",
+                    "date": end_at[:10] if end_at else "상세 확인",
+                })
+            return results
+        except Exception as e:
+            print(f"프로그래머스 수집 실패: {e}")
+        return []
+
+    def fetch_codeforces(self):
+        """Codeforces 공식 API에서 아직 시작하지 않은(phase=BEFORE) 대회를 가져옵니다."""
+        try:
+            res = requests.get(
+                "https://codeforces.com/api/contest.list",
+                params={"gym": "false"}, headers=self.headers, timeout=15,
+            )
+            if res.status_code != 200:
+                return []
+            data = res.json()
+            if data.get('status') != 'OK':
+                return []
+            results = []
+            for c in data.get('result', []):
+                if c.get('phase') != 'BEFORE':
+                    continue
+                start_sec = c.get('startTimeSeconds')
+                date_str = "상세 확인"
+                if start_sec:
+                    date_str = datetime.utcfromtimestamp(start_sec + 9 * 3600).strftime('%Y-%m-%d %H:%M KST')
+                results.append({
+                    "title": f"[Codeforces] {c.get('name', '')}",
+                    "url": f"https://codeforces.com/contests/{c.get('id')}",
+                    "host": "Codeforces",
+                    "date": date_str,
+                })
+            return results
+        except Exception as e:
+            print(f"Codeforces 수집 실패: {e}")
+        return []
+
+    def fetch_atcoder(self):
+        """AtCoder 공식 대회 목록 페이지에서 'Upcoming Contests' 표를 가져옵니다."""
+        try:
+            res = requests.get("https://atcoder.jp/contests/", headers=self.headers, timeout=15)
+            if res.status_code != 200:
+                return []
+            soup = BeautifulSoup(res.text, 'html.parser')
+            heading = soup.find(
+                lambda tag: tag.name in ('h2', 'h3') and 'Upcoming Contests' in tag.get_text()
+            )
+            table = heading.find_next('table') if heading else None
+            if not table:
+                return []
+            results = []
+            for tr in table.select('tbody tr'):
+                tds = tr.find_all('td')
+                if len(tds) < 2:
+                    continue
+                time_tag = tds[0].find('time')
+                a = tds[1].find('a')
+                if not a:
+                    continue
+                title = a.get_text(strip=True)
+                href = a.get('href', '')
+                if not title or not href:
+                    continue
+                results.append({
+                    "title": f"[AtCoder] {title}",
+                    "url": urljoin("https://atcoder.jp/", href),
+                    "host": "AtCoder",
+                    "date": time_tag.get_text(strip=True) if time_tag else "상세 확인",
+                })
+            return results
+        except Exception as e:
+            print(f"AtCoder 수집 실패: {e}")
+        return []
+
+    def fetch_leetcode(self):
+        """LeetCode GraphQL API에서 시작 전인 Weekly/Biweekly 대회를 가져옵니다."""
+        try:
+            payload = {"query": "query { allContests { title titleSlug startTime } }"}
+            h = self.headers.copy()
+            h["Content-Type"] = "application/json"
+            res = requests.post("https://leetcode.com/graphql", json=payload, headers=h, timeout=15)
+            if res.status_code != 200:
+                return []
+            now_sec = datetime.now().timestamp()
+            results = []
+            for c in res.json().get('data', {}).get('allContests', []):
+                start_time = c.get('startTime')
+                if not start_time or start_time < now_sec:
+                    continue
+                date_str = datetime.utcfromtimestamp(start_time + 9 * 3600).strftime('%Y-%m-%d %H:%M KST')
+                results.append({
+                    "title": f"[LeetCode] {c.get('title', '')}",
+                    "url": f"https://leetcode.com/contest/{c.get('titleSlug', '')}/",
+                    "host": "LeetCode",
+                    "date": date_str,
+                })
+            return results
+        except Exception as e:
+            print(f"LeetCode 수집 실패: {e}")
+        return []
+
+    def fetch_codechef(self):
+        """CodeChef 공식 API에서 예정된(future) 대회를 가져옵니다."""
+        try:
+            res = requests.get(
+                "https://www.codechef.com/api/list/contests/all",
+                headers=self.headers, timeout=15,
+            )
+            if res.status_code != 200:
+                return []
+            data = res.json()
+            results = []
+            for c in data.get('future_contests', []):
+                title = c.get('contest_name', '')
+                code = c.get('contest_code', '')
+                if not title or not code:
+                    continue
+                start_iso = c.get('contest_start_date_iso', '')
+                date_str = start_iso[:16].replace('T', ' ') if start_iso else "상세 확인"
+                results.append({
+                    "title": f"[CodeChef] {title}",
+                    "url": f"https://www.codechef.com/{code}",
+                    "host": "CodeChef",
+                    "date": date_str,
+                })
+            return results
+        except Exception as e:
+            print(f"CodeChef 수집 실패: {e}")
+        return []
+
+    # ─────────────────────────────────────────────────────
     # 유틸리티 및 실행 섹션
     # ─────────────────────────────────────────────────────
 
@@ -1062,6 +1220,11 @@ class HackathonBot:
             ("Devfolio", self.fetch_devfolio),         # 글로벌 해커톤 (인도/Web3 다수)
             ("DACON", self.fetch_dacon),               # 국내 AI 경진대회 종합
             ("Kaggle", self.fetch_kaggle),             # 글로벌 데이터과학 경진대회
+            ("프로그래머스", self.fetch_programmers),     # 국내 알고리즘/코딩 대회
+            ("Codeforces", self.fetch_codeforces),     # 글로벌 알고리즘 대회
+            ("AtCoder", self.fetch_atcoder),           # 글로벌 알고리즘 대회
+            ("LeetCode", self.fetch_leetcode),         # 글로벌 위클리/격주 코딩 대회
+            ("CodeChef", self.fetch_codechef),         # 글로벌 알고리즘 대회
             # 아래는 사이트 폐쇄/차단으로 비활성화:
             #   대티즌(SSL 장애), 공모주(도메인 소멸), 과기정통부(JS 렌더링)
             # ("대티즌", self.fetch_datzine),
