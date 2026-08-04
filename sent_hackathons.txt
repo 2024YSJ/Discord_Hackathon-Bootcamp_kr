@@ -2361,3 +2361,23 @@ Python Basic Programming Competition
 [Devfolio] Binary Hacks 4.0
 [Codeforces] Codeforces Round (Div. 1)
 [Codeforces] Codeforces Round 1114 (Div. 3)
+🇰🇷 [캠퍼스픽] [채용/해커톤] 💻 2026 주식회사 소프트뱅크(SoftBank) 채용
+자바 부트캠프 스프링부트 데이터베이스 SQLD 국비과정 국비학원 실무중심
+[콘테스트코리아] 항공산업 아이디어 공모전
+[콘테스트코리아] 생성형 AI 퓨전국악 뮤직비디오 공모전
+[콘테스트코리아] [대구테크노파크] 퇴근 후 생존 스킬 : 직장인을 위한 실전 업무 자동화 온라인 무료특강
+[K-Startup] 2026년 창업진흥원 정책 아이디어 공모전 2026년 창업진흥원 정책 아이디어 공모전 창업진흥원 조회 3,478
+[K-Startup] 「다시 쓰는 성공기」 제14회 재도전 사례 공모전 참가 모집 공고 재도전성공패키지 창업진흥원 조회 13,050
+[K-Startup] 행사ㆍ네트워크 오늘마감 마감일자 2026-08-04 「민관협력 오픈이노베이션 지원」2026년 제2차 방산 스타트업 챌린지(모두의 챌린지-방산) 
+The Chandigarh Police Hackathon
+AETHOS - Day Zero
+The Gotham Times
+Batman & Robin
+Riddler's Escape
+Prompt with Jarvis
+Infinity Interface
+Why So Serious?
+Rogue AI
+CodeRed 2026: FIFA World Cup
+[Devfolio] HackSpire'26
+[Codeforces] ICPC 2026 Online Challenge 1 powered by Huawei
