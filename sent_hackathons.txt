@@ -2444,3 +2444,26 @@ Hackblox AI & Open Source Hackathon
 Bitmela Launchpad: Ideathon 01
 StarForge Hackathon
 [LeetCode] Weekly Contest 515
+Impact Forge: Summer 2026 Hackathon
+Iris Hacks IV
+🇰🇷 [캠퍼스픽] 대한민국 가스안전 AI 게임·영상 공모전
+[NST] 대한민국 AI Native R&D를 함께 만드는 NAIS AI 해커톤 (~9/6)
+AI 기반 정보보안 솔루션 엔지니어 양성과정 ( 모의해킹, 취약점 분석 )
+AI·IoT 시대, 기기를 움직이는 임베디드·펌웨어 개발자 국비지원교육
+[현대차 로보틱스 사내벤처] '피지컬AI' 자율주행&협동로봇, 로보틱스 엔지니어 양성 부트캠프' (~8/17)
+[쌍용캠프] ▶ 8/24, 9/29 개강! AI 실무형 클라우드 백엔드 취업 부트캠프
+[국비지원][KDT중탈자 참여가능] AI 에이전트 서비스 개발자 부트캠프 - RAG, MCP, MLOps 2기
+[콘테스트코리아] 제7회 청소년 IT경시대회
+[콘테스트코리아] 학문•과학•IT 2026년 공무원연금공단 AI•공공데이터 대국민 시각화 경진대회
+[콘테스트코리아] 년 통일부 공공데이터 활용 공모전
+[콘테스트코리아] [국비교육] [로보티즈, 클로봇] Physical AI 로봇 SW개발 (최근 취업률 81.8%, 대기업 및 중견기업 취업 사례)
+[콘테스트코리아] 삼성전자 제2회 AI HOME 인테리어 컨테스트
+[K-Startup] 2026년 창업진흥원 정책 아이디어 공모전 2026년 창업진흥원 정책 아이디어 공모전 창업진흥원 조회 12,726
+[K-Startup] 「다시 쓰는 성공기」 제14회 재도전 사례 공모전 참가 모집 공고 재도전성공패키지 창업진흥원 조회 18,522
+[기업마당] 2026년 K-브랜드 챌린지 참여기업 모집 연장 공고
+CoArena Hackathon
+Evil Corp CTF V2
+Precision Care Challenge 2026
+Aethon 2026 | 24-Hour National Hackathon
+TEJAS India Hackathon 2026
+Edge AI Hackathon 2026
