@@ -2471,3 +2471,12 @@ PeddieHacks 2026
 [K-Startup] 2026년 창업진흥원 정책 아이디어 공모전 2026년 창업진흥원 정책 아이디어 공모전 창업진흥원 조회 14,886
 [K-Startup] 「다시 쓰는 성공기」 제14회 재도전 사례 공모전 참가 모집 공고 재도전성공패키지 창업진흥원 조회 19,467
 [Devfolio] HACKBIOS 2K26
+[콘테스트코리아] Kia Shop 아이디어 크루 공모전
+[K-Startup] 2026년 창업진흥원 정책 아이디어 공모전 2026년 창업진흥원 정책 아이디어 공모전 창업진흥원 조회 17,033
+[K-Startup] 「다시 쓰는 성공기」 제14회 재도전 사례 공모전 참가 모집 공고 재도전성공패키지 창업진흥원 조회 20,360
+StartupX Hackathon 2026
+Zero Dependency | 72-Hour Hackathon
+Webverse Hackathon
+byteBuilt 1.0
+QuantStorm
+SN1PHERS 3.0: Capture The Flag(CTF)
