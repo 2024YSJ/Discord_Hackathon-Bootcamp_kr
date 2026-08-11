@@ -2480,3 +2480,24 @@ Webverse Hackathon
 byteBuilt 1.0
 QuantStorm
 SN1PHERS 3.0: Capture The Flag(CTF)
+🇰🇷 [데브이벤트] Codex Community Hackathon - Seoul for Students
+🇰🇷 [데브이벤트] 2026 NAIS AI 해커톤 (AI4Sci Korea 2026)
+🇰🇷 [캠퍼스픽] [NST] 대한민국 AI Native R&D를 함께 만드는 NAIS AI
+[NST] 대한민국 AI Native R&D를 함께 만드는 NAIS AI 해커톤 (~9/7)
+국내유일 MCU 임베디드&펌웨어 국비지원 교육 부트캠프 [기숙사 지원]
+[쌍용교육센터] 100% 대면교육 ▶2026/09/29 개강 AI × 클라우드 네이티브 백엔드 취업 부트캠프
+[콘테스트코리아] [2026 창원콘텐츠컨벤션] 고교생·대학생 AI 공모전
+[콘테스트코리아] 대학생 소셜벤처 아이디어 공모전
+[콘테스트코리아] 청주영상위원회 AI 영상 공모전
+[콘테스트코리아] 2026 청소년 AI 콘텐츠 경진대회
+[콘테스트코리아] WDC BUSAN 2028 프로그램 연계 시민 참여 디자인 아이디어 공모전
+[콘테스트코리아] 2026 제7회 청소년 IT경시대회
+[콘테스트코리아] [국비교육] [Telechips, 넥스트칩] AI 시스템반도체 설계(2기) (최근 취업률 81.5%, 팹리스협회회원사 채용연계과정)
+[K-Startup] 2026년 창업진흥원 정책 아이디어 공모전 2026년 창업진흥원 정책 아이디어 공모전 창업진흥원 조회 19,353
+[K-Startup] 「다시 쓰는 성공기」 제14회 재도전 사례 공모전 참가 모집 공고 재도전성공패키지 창업진흥원 조회 21,384
+[K-Startup] 2026년 초기창업패키지 로켓십 IR 경진대회 참가기업 모집 (1회차: AI·빅데이터)
+[K-Startup] [대전관광공사] 2026 대전·세종 관광 창업 역량강화교육 및 창업경진대회 참가자 모집
+MARKATHON 2026 – India's Biggest Marketing Innovation Challenge
+ZYRORA - 24-Hour National Level Inter-College  Hackathon
+Washing App Debug Challenge
+[Devfolio] The Great Agent Hackathon
