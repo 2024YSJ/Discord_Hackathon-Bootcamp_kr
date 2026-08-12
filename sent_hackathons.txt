@@ -2501,3 +2501,20 @@ MARKATHON 2026 – India's Biggest Marketing Innovation Challenge
 ZYRORA - 24-Hour National Level Inter-College  Hackathon
 Washing App Debug Challenge
 [Devfolio] The Great Agent Hackathon
+[ AWS, Azure 클라우드 ] KT클라우드 부트캠프 IT 인프라엔지니어 국비지원
+AI·IoT 기반, 임베디드·펌웨어 개발자 취업 국비지원 부트캠프
+현대로템 방산+AI부트캠프[국방기술학회 이사장 채용추천서] 수료자 전원 제공 +추가모집 단 2자리
+MCU기반 임베디드&펌웨어 국비지원 교육 부트캠프 [기숙사 지원]
+AI 기반 모의해킹·취약점진단 [ 정보보안 취업 ] 국비지원 부트캠프
+[KDT 미수료자도 참여 가능! 8월 25일 개강] AI 에이전트 서비스 개발자 부트캠프
+[콘테스트코리아] 장애 이해 AI 포스터 공모전
+[콘테스트코리아] [굿네이버스] AI 캠페인 크리에이터 2기 | 아이디어를 AI디어로
+[콘테스트코리아] 강남세움복지관 디지털 리터러시 서포터즈
+[K-Startup] 2026년 창업진흥원 정책 아이디어 공모전 2026년 창업진흥원 정책 아이디어 공모전 창업진흥원 조회 21,753
+[K-Startup] 「다시 쓰는 성공기」 제14회 재도전 사례 공모전 참가 모집 공고 재도전성공패키지 창업진흥원 조회 22,316
+DevCrest Buildathon '26
+[Devfolio] FusioniX2026
+[Devfolio] CodeWars1.0
+[Devfolio] CodeShift
+[Devfolio] Recursion Edition II
+[CodeChef] Placement Prep Weekends - 03
