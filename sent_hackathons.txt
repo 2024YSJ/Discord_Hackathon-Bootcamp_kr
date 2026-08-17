@@ -2587,3 +2587,9 @@ Innovik 6.0 – International Hackathon 2026
 [Devfolio] DOMINION 2026
 [Codeforces] Codeforces Round 1117 (Div. 2)
 [LeetCode] Biweekly Contest 190
+[K-Startup] 2026년 창업진흥원 정책 아이디어 공모전 2026년 창업진흥원 정책 아이디어 공모전 창업진흥원 조회 37,412
+[K-Startup] 「다시 쓰는 성공기」 제14회 재도전 사례 공모전 참가 모집 공고 재도전성공패키지 창업진흥원 조회 26,765
+Z0d1ak CTF
+The Pirate’s Flag – Capture the Flag Challenge
+Quantum Alpha
+[LeetCode] Weekly Contest 516
