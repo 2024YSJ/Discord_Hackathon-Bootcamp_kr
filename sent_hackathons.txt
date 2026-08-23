@@ -2702,3 +2702,24 @@ The Frontend Odyssey 2026
 [AtCoder] AtCoder Regular Contest++ 228
 [AtCoder] AtCoder Regular Contest-- 229
 [AtCoder] AtCoder Heuristic Contest 071
+GatewayHacks 2026 | Software & AI 
+🇰🇷 [데브이벤트] 2026 AI 에너지전환 컨퍼런스 & 제3회 풍력발전량 예측 AI 경진대회 시상식
+🇰🇷 [데브이벤트] Daytona HackSprint Seoul 해커톤
+[콘테스트코리아] 년 예금보험공사 혁신 아이디어 공모전 개최
+[콘테스트코리아] 제1회 대경대학교 엔터테크과 청소년 AI 영화·영상 공모전
+[콘테스트코리아] 제9회 핀테크 아이디어 공모전
+[콘테스트코리아] 「제6회 그린리모델링 챌린지」 대학생 해커톤
+[콘테스트코리아] 2026 국민 아이디어 제안대회(오프라인 국민 평가단 모집)
+[K-Startup] 2026년 창업진흥원 정책 아이디어 공모전 2026년 창업진흥원 정책 아이디어 공모전 창업진흥원 조회 62,060
+Full Stack Python with Gen-AI
+TurtleBot Pursuit & Evasion Challenge
+Agentic AI Hackathon
+Math-O-Stellar
+CADathon
+Graviton
+Design Marathon
+CP Contest
+Web Hackathon
+[Devfolio] Builders Day by HackUnion
+[AtCoder] AtCoder Regular Contest++ 230
+[LeetCode] Weekly Contest 517
