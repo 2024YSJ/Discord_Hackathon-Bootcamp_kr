@@ -2723,3 +2723,20 @@ Web Hackathon
 [Devfolio] Builders Day by HackUnion
 [AtCoder] AtCoder Regular Contest++ 230
 [LeetCode] Weekly Contest 517
+GatewayHacks 2026 | Software & AI 
+[콘테스트코리아] AI로 만드는 기상과학 로고송 챌린지 공모전
+[콘테스트코리아] The 다양한 분야 자원봉사 아이디어 국민투표 "참여 챌린지"
+[콘테스트코리아] 제8회 공간정보 활용·아이디어 경진대회
+[K-Startup] 2026년 창업진흥원 정책 아이디어 공모전 2026년 창업진흥원 정책 아이디어 공모전 창업진흥원 조회 65,507
+The Minute - LV8 Tech Video Editor Hackathon
+Fintechstico V7.0 - Diving into the World of Fintech
+Anveshan'26 -  24 Hr Hackathon
+FUSION X 1.0 – 24-Hour Hackathon
+Slay CTF
+St.Jude's Code Arena
+INIT'26 - Hackathon
+CodeArena 2026
+Code2Create 7.0
+[Devfolio] Hackrit
+[Devfolio] Cognition - GameJam '26
+[Devfolio] Realm Hack '26
