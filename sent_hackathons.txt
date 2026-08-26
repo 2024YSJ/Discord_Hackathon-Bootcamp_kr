@@ -2758,3 +2758,26 @@ BuildSprint
 Code Quest 2026 – 21-Day Competitive Coding Challenge
 Hack The Horizon 2.0 – 24-Hour Hackathon
 Artha - The Algorithmic Trading Challenge
+GatewayHacks 2026 | Software & AI 
+🇰🇷 [캠퍼스픽] 한국정보통신기술협회 2026 ICT 표준 챌린지 공모전(~8/31)
+현직자와 함께하는 미니 직무부트캠프
+부산) SK planet_AI 빅데이터 무료교육 [KDT수료자도 참여가능] 부산 AI부트캠프
+(부산) SK플래닛 AI 취업 부트캠프 무료교육, 국비 수료생도 참여가능
+[콘테스트코리아] 한국해양진흥공사와 함께하는 해(海)답을 찾다 2026 해양환경보전 아이디어 공모전
+[콘테스트코리아] K-조선 해커톤
+[콘테스트코리아] 성균관대학교 AI CAMPUS 1기 로봇 데이터 엔지니어링 실무 양성과정
+[콘테스트코리아] [KDT AI CAMPUS] NVIDIA와 함께 성장하는 차세대 AI 엔지니어를 찾습니다
+[콘테스트코리아] [해외취업-국비지원연수] 2026 캐나다 취업 AI.데이터분석 기반 경영사무 실무자 양성과정
+[콘테스트코리아] 자원봉사 아이디어 국민투표 "참여 챌린지"
+[콘테스트코리아] 2026년 공공 웹·앱 서비스 UI/UX 국민평가단 모집
+[K-Startup] 2026년 창업진흥원 정책 아이디어 공모전 2026년 창업진흥원 정책 아이디어 공모전 창업진흥원 조회 71,391
+Bit N Build - Around the World 2026
+Decarbonix 1.0
+Hack the Hardware India 2.0 (HTH India 2.0) — Build. Innovate. Win.
+Hackbattle
+CodeSlayer 2.0 2k26
+Anakin Forge Hackathon
+[Devfolio] Codeutsava X.0
+[Devfolio] Hack On Hills 8.0
+[AtCoder] ALGO ARTIS Programming Contest 2026 September（AtCoder Heuristic Contest 072）
+[CodeChef] Starters 254
