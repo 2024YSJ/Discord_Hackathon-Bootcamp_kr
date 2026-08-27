@@ -2781,3 +2781,35 @@ Anakin Forge Hackathon
 [Devfolio] Hack On Hills 8.0
 [AtCoder] ALGO ARTIS Programming Contest 2026 September（AtCoder Heuristic Contest 072）
 [CodeChef] Starters 254
+GatewayHacks 2026 | Software & AI 
+🇰🇷 [데브이벤트] 2026 K-조선 해커톤
+🇰🇷 [캠퍼스픽] 모두의 AI 실험실 AI 서비스 경진대회
+부트캠프 콜 세일즈 아르바이트
+(부산) SK플래닛 AI 취업 부트캠프 무료교육, 국비 수료생도 참여가능 / 28일 접수마감
+[ 메가존클라우드 ] AI 아키텍트 클라우드 엔지니어 국비지원 부트캠프
+[  메가존클라우드 ]  AI 데이터 엔지니어 국비지원 부트캠프
+[ 메가존 클라우드 ]  AI 보안 엔지니어 국비지원 부트캠프
+[콘테스트코리아] 제주 디지털 통합 신원인증 앱 명칭 공모
+[콘테스트코리아] The 다양한 분야 2026년도 메타버스 학교안전문화 확산 공모전
+[콘테스트코리아] 경남 마산로봇랜드 테마파크 AI영상 제작 공모전
+[콘테스트코리아] 년 전남광주통합특별시북구시설관리공단 ESG 경영 주민 아이디어 공모전
+[콘테스트코리아] 2026년 미래내일 일경험 사업_청년 피지컬AI 일경험 프로젝트[2기]
+[K-Startup] 2026년 창업진흥원 정책 아이디어 공모전 2026년 창업진흥원 정책 아이디어 공모전 창업진흥원 조회 74,823
+[K-Startup] 2026 충남 대학생 창업경진대회 참여기업 모집
+Inspiron 5.0
+WCE Hackathon 2026
+Innovate  X Hackathon
+Changethon
+Innerve X: India’s Largest Student Driven Hackathon
+India's Biggest AI Hackathon
+Myntra HackerRamp: WeForShe 2025
+Swift-Hack
+Code Uncode
+[Devfolio] HACK WITH GDG S4
+[Codeforces] Educational Codeforces Round 194 (Rated for Div. 2)
+[Codeforces] Codeforces Round 1118 (Div. 2)
+[AtCoder] AAL Contest 001: Let's use segtree!
+[CodeChef] Placement Prep Weekends - 05
+[CodeChef] Monday Munch - DSA Challenge 018 (Rated)
+[CodeChef] Starters 255
+[CodeChef] Starters 256
