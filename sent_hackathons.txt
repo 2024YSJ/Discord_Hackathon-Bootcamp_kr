@@ -2830,3 +2830,6 @@ United Hacks V8
 [Devfolio] Hacknauts 2.0
 [LeetCode] Biweekly Contest 191
 [LeetCode] Weekly Contest 518
+GatewayHacks 2026 | Software & AI 
+United Hackathons V1
+[K-Startup] 2026년 창업진흥원 정책 아이디어 공모전 2026년 창업진흥원 정책 아이디어 공모전 창업진흥원 조회 82,590
