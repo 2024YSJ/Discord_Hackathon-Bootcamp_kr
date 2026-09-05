@@ -2903,3 +2903,13 @@ LexHack 2026
 [콘테스트코리아] 실습진행/최신 ChatGPT 실전 활용 & AI 업무자동화 완전정복- 실습ㆍ구축 2차 세미나
 [K-Startup] 2026년 서울창업센터 관악 관악S밸리 창업 페스티벌 '창업 아이디어 경진대회' 참가자 모집
 [Devfolio] Avalon OpenHack
+MLAI Hackathon
+부트캠프 전화 상담 아르바이트 (시급 15,000원)
+[콘테스트코리아] 국립과천과학관 AI 활용 숏폼 공모전
+[콘테스트코리아] 대전관광공사 주민참여 아이디어 공모전
+[콘테스트코리아] [문화체육관광부×한국문화정보원] 문화데이터 활용 영상 제작 AI 챌린지
+[콘테스트코리아] 'AI 영화음악 워크숍: 신(Scene)나는 사운드' 참여자 모집
+[콘테스트코리아] 2026년 국민 AI 혁신단 모집
+[AtCoder] 第七回日本最強プログラマー学生選手権～Advance～
+[AtCoder] JIJ Programming Contest 2026（AtCoder Beginner Contest 476）
+[AtCoder] AtCoder Grand Contest 078
