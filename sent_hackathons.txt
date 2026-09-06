@@ -2913,3 +2913,4 @@ MLAI Hackathon
 [AtCoder] 第七回日本最強プログラマー学生選手権～Advance～
 [AtCoder] JIJ Programming Contest 2026（AtCoder Beginner Contest 476）
 [AtCoder] AtCoder Grand Contest 078
+[LeetCode] Weekly Contest 519
