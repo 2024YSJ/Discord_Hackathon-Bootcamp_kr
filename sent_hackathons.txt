@@ -2914,3 +2914,8 @@ MLAI Hackathon
 [AtCoder] JIJ Programming Contest 2026（AtCoder Beginner Contest 476）
 [AtCoder] AtCoder Grand Contest 078
 [LeetCode] Weekly Contest 519
+MLAI Hackathon 2026
+TLN Hackathon 2026
+[콘테스트코리아] 년 충청남도 데이터 분석 아이디어 공모전
+[콘테스트코리아] 2026 대전관광공사 주민참여 아이디어 공모전
+[Devfolio] Recursive
