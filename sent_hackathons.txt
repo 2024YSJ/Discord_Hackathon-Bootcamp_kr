@@ -2930,3 +2930,11 @@ TLN Hackathon 2026
 [Devfolio] DEFINE 4.0
 [AtCoder] AtCoder Beginner Contest 478
 [LeetCode] Weekly Contest 520
+🇰🇷 [캠퍼스픽] 2026 AI 창업 경진대회 참가자 모집
+🇰🇷 [캠퍼스픽] 2026 해운·항만·물류 AX 아이디어 공모전
+[쌍용캠프] ▶ 9/29,  10/12개강! AI 실무형 클라우드 백엔드 취업 부트캠프
+[시급 15,000원] 부트캠프 전화 상담 아르바이트
+[K-Startup] 2026 창업경진대회(IMPACT ON 강북 : 아이디어와 투자로 만드는 강북의 창업 무대) 관람객 모집
+[Devfolio] HackOphobia
+[Devfolio] DEVHACK 2026
+[AtCoder] AtCoder Regular Contest++ 232
