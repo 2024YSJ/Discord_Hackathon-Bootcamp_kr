@@ -2965,3 +2965,12 @@ STM32 ESP32 임베디드 국비지원 부트캠프
 [Codeforces] Codeforces Round 1121 (Div. 2)
 [Codeforces] Codeforces Round 1120 (Div. 1)
 [Codeforces] Codeforces Round 1120 (Div. 2)
+ForgeHacks Online 2026
+스마트 팩토리·팜·로봇팔·자율주행 국비지원 [임베디드 AIoT교육] 부트캠프
+채용연계형 기업주관 [클라우드아키텍트·보안·AI에이전트·데이터] 부트캠프
+KT클라우드 [실시간 온라인] 국비지원 부트캠프
+IT분야취업 비전공취업 가능한 IT직업종류
+[콘테스트코리아] [KOICA] 2026 인도적 지원 청년・대학생 아이디어 경진대회
+[콘테스트코리아] 추계학술대회 대학생 ERP 아이디어 공모전
+[Devfolio] Grand Innovation Challenge
+[LeetCode] Biweekly Contest 192
