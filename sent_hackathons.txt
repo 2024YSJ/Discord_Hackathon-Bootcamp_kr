@@ -3064,3 +3064,10 @@ EurekaDev 2026
 [K-Startup] 2026 제10회 G밸리창업경진대회 참가기업 모집
 [LeetCode] Biweekly Contest 193
 [LeetCode] Weekly Contest 522
+Arbiter Hacks V1
+정보보안부트캠프 화이트해커 모의해킹전문가 국비교육
+부산 IT부트캠프 AWS클라우드 혹은 AI 국비지원교육
+[쌍용캠프] ▶ 10/12개강! AI 실무형 클라우드 백엔드 취업 부트캠프
+[콘테스트코리아] BMF International Music Competition for Blind and Visually Impaired Musicians
+[콘테스트코리아] [방송미디어통신위원회] 생성형 AI 위험성 찾기 이벤트 시즌3
+[Codeforces] Codeforces Round 1123 (Div. 2)
