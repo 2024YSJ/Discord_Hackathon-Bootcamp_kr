@@ -3143,3 +3143,18 @@ Google - The Gemma 4 Developer Agent Competition
 Google - The Gemma 4 Developer Agent Paper Track
 [CodeChef] Placement Prep Weekends - 09
 [CodeChef] Monday Munch - DSA Challenge 022 (Rated)
+WarriorHacks 2.0
+🇰🇷 [데브이벤트] GWDC 2026 Korea 해커톤
+🇰🇷 [데브이벤트] 제5회 2026 대한민국 고등학생 AI·SW 개발 공모전
+🇰🇷 [데브이벤트] 2026년 제13회 소프트웨어(SW) 개발보안 경진대회
+🇰🇷 [데브이벤트] 2026 국방 AI 경진대회 (MAICON)
+🇰🇷 [데브이벤트] Korea Defense Tech Hackathon
+🇰🇷 [데브이벤트] 2026 고용24 국민참여 AI 고용서비스 발굴 온라인 해커톤
+🇰🇷 [데브이벤트] 2026 KoMaP AI 경진대회
+🇰🇷 [데브이벤트] 공공 웹사이트 불법광고 탐지 도구 개발 공모전
+🇰🇷 [데브이벤트] Cursor Hackathon Seoul 4th
+🇰🇷 [데브이벤트] 쿵야 IP를 활용한 로블록스(Roblox) 게임 콘텐츠 제작 공모전
+🇰🇷 [데브이벤트] 2026 DATA·AI 분석 경진대회
+[위비티/과학/공학] 2027 전국 대학생 자작 미래자동차 경진대회
+[Codeforces] Codeforces Round 1124 (Div. 1)
+[Codeforces] Codeforces Round 1124 (Div. 2)
