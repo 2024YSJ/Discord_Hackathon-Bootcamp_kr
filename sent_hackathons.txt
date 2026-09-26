@@ -3158,3 +3158,8 @@ WarriorHacks 2.0
 [위비티/과학/공학] 2027 전국 대학생 자작 미래자동차 경진대회
 [Codeforces] Codeforces Round 1124 (Div. 1)
 [Codeforces] Codeforces Round 1124 (Div. 2)
+[콘테스트코리아] 전국민 AI 역량강화 정책 슬로건 공모전
+[Devfolio] ALGOTHON'26
+[Devfolio] sudo Hacktober
+[Devfolio] Q-HACK INDIA 2026
+[Devfolio] Wild Bugs
