@@ -3163,3 +3163,4 @@ WarriorHacks 2.0
 [Devfolio] sudo Hacktober
 [Devfolio] Q-HACK INDIA 2026
 [Devfolio] Wild Bugs
+Multimodal AI Hackathon 2026
