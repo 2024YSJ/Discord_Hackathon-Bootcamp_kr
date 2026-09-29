@@ -3186,3 +3186,29 @@ AI-EDU Next Class – 전국 예비교원 AI 융합 수업설계 해커톤
 [콘테스트코리아] 제3회 송파 글로벌 AI 아트영화제
 [콘테스트코리아] 2026 CTS 국제 AI 단편영화 제작지원사업
 [콘테스트코리아] [BytePlus × AI-Kive] Seedance 2.5 AI 시리즈 제작지원 공모전
+StormHacks 2026
+🇰🇷 [데브이벤트] 2026 제14회 빅콘테스트 AI·데이터 경진대회
+🇰🇷 [캠퍼스픽] [BytePlus x AI-Kive] Seedance2.5 AI 시리즈
+🇰🇷 [캠퍼스픽] 2026 POSTECH OIBC 빅데이터 경진대회
+🇰🇷 [캠퍼스픽] 2027 전국 대학생 자작 미래자동차 경진대회
+2026 SNU X Croche AI 앱 해커톤
+서울클라우드학원 AWS GCP 부터 도커 쿠버네티스까지 배우고 취업연계 받기
+컴퓨터국비지원학원 AI 부터 정보보안 교육 통해 비전공취업
+[내배카드 10월 13일 개강] AWS 자바 풀스택(FastAPI,React) 부트캠프
+[서울시x동국대 청년취업사관학교] AI에이전트 업무자동화 전문가 부트캠프
+[위비티/웹/모바일/IT] LG 대국민 미소 사진 공모전 - 스마일 모먼트
+[위비티/웹/모바일/IT] [서울대학교 창업지원단·H1R AI] 2026 SNU X Croche AI 앱 해커톤
+[위비티/과학/공학] 2026 POSTECH OIBC 빅데이터 경진대회
+[콘테스트코리아] 미술•디자인•웹툰 【국립강원전문과학관】 AI 경진대회 - 동화책 만들기 / 4컷 과학만화 만들기
+[콘테스트코리아] 년 강북구 청소년 사회적경제 아이디어 공모전
+[콘테스트코리아] 통합 라디오 애플리케이션 대국민 아이디어 공모
+[콘테스트코리아] 2026년 제천시 AI 활용 데이터 분석 아이디어 공모전
+[콘테스트코리아] 차세대 SOFC/SOEC 시장 선점을 위한 핵심 기술개발과 활용방안 및 사업화 전략 세미나
+[콘테스트코리아] [충북가상융합산업혁신센터] AI와 함께하는 바이브코딩 XR 무료 교육
+[기업마당] 2026년 딥테크 챌린지 프로젝트 기술도전형 제2차 기술수요조사 시행계획 공고
+[Devfolio] CODEARAMBH 2.0
+The Pokémon Company - PTCG AI Battle Challenge Playground
+[Codeforces] DeepInfra Round 1 (Codeforces Round, Div. 1 + Div. 2)
+[AtCoder] AtCoder Heuristic Contest 073
+[AtCoder] AtCoder Beginner Contest 480
+[LeetCode] Weekly Contest 523
