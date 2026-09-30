@@ -3212,3 +3212,23 @@ The Pokémon Company - PTCG AI Battle Challenge Playground
 [AtCoder] AtCoder Heuristic Contest 073
 [AtCoder] AtCoder Beginner Contest 480
 [LeetCode] Weekly Contest 523
+Life After Code
+ImpactHack 2026
+🇰🇷 [캠퍼스픽] 2026 SNU X Croche AI 앱 해커톤
+2026년 K-푸드테크 해커톤 대회
+2026 우연한식탁 MVP 개발 해커톤
+비전공자 정보보안 개발자 취업연계 국비지원IT교육
+취준생 직업고민은 국비지원IT교육으로 평생직업 갖기
+[한양대 ERICA] 청년도약 인재양성 디스플레이 부트캠프 10월-11월 교육 참여자 모집
+[위비티/게임/SW] 2026 CWNU SW-DNA² 챌린지 대학생 AI·SW 경진대회
+[콘테스트코리아] 우연한식탁 MVP 개발 해커톤
+[콘테스트코리아] 한국탄소산업진흥원 2026 AI 영상 콘텐츠 공모전  탄소, 다시 보다
+[콘테스트코리아] 고용24 국민참여 AI 고용서비스 발굴 온라인 해커톤
+[콘테스트코리아] [데이콘]합성 미세구조 기반 재료 물성 예측 AI 경진대회
+[콘테스트코리아] AI 작곡대회 챌린지
+[콘테스트코리아] 실제 가족의 사업장으로 진행하는 AI·디지털커머스 실무 프로젝트 참가 교육생 모집
+[기업마당] [세종] 2026년 일ㆍ생활 균형 우수기업사례 공모전 공고
+[Devfolio] GeNarrative Clash
+[DACON] 항만 문제해결을 위한 AI 기술 공모전
+[Codeforces] WorldQuant Round 1 (Codeforces Round Div. 1 + Div. 2)
+[CodeChef] Placement Prep Weekends - 10
