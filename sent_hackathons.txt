@@ -3296,3 +3296,18 @@ AI 로봇 부트캠프 천안 상륙! 남서울대 ROS2 로봇팔·자율주행 
 Cosmo Hacks
 [Codeforces] DeepInfra Round 1 (Codeforces Round 1126, Div. 1 + Div. 2)
 Hack Knight Fall 2026
+🇰🇷 [데브이벤트] 2026 SNU X Croche AI 앱 해커톤
+🇰🇷 [데브이벤트] Replit x OpenAI x AWS x Gold House Ventures Hackathon
+26/12/21 개강_AI × 클라우드 네이티브 백엔드 취업 부트캠프
+[쌍용교육센터] 100% 대면교육 ▶2026/11/09 개강 AI × 클라우드 네이티브 백엔드 취업 부트캠프
+[콘테스트코리아] 생명안전 AI숏폼 공모전
+[콘테스트코리아] [국립해양생물자원관] 해양바이오뱅크 산업·연구 활용 아이디어 발굴 공모전
+[콘테스트코리아] 년 파주시정 혁신 아이디어 공모전
+[콘테스트코리아] LAIKA COMPANY 연극 <행인두부의 마음> 남녀배우 오디션
+[콘테스트코리아] 2026년 K-푸드테크 해커톤 대회
+[콘테스트코리아] 스위프 앱 6기 데모데이  네트워킹 행사
+[콘테스트코리아] [KDT] 국민 백신 알약개발사 이스트캠프 가디언즈 정보보안 과정 15기
+[CodeChef] Starters 259
+[CodeChef] Starters 260
+[CodeChef] Starters 261
+[CodeChef] Starters 262
