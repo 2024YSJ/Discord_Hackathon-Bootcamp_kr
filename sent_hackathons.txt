@@ -3351,3 +3351,5 @@ QMUL AI Hackathon
 [AtCoder] AtCoder Grand Contest 079
 [LeetCode] Biweekly Contest 194
 [LeetCode] Weekly Contest 524
+Gator Hack V - AI Days 2026
+[Devfolio] Hackman X
