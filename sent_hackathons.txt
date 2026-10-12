@@ -3353,3 +3353,12 @@ QMUL AI Hackathon
 [LeetCode] Weekly Contest 524
 Gator Hack V - AI Days 2026
 [Devfolio] Hackman X
+MLH Hacktoberfest Hack Day Teens Delhi X ElevenLabs
+YUMITHON - 맛집 검색 및 예약 MCP 를 활용한 앱 및 서비스 제작 해커톤
+비전공자도 개발자로! AI·클라우드 실무 취업 부트캠프 11/11 개강
+[서울시x동국대 청년취업사관학교] 피지컬 AI Vision Edge 전문가 부트캠프
+[SSAFY] 삼성청년SW·AI아카데미 17기 모집공고
+[SSAFY] 삼성청년SW·AI아카데미 17기 모집설명회 안내
+[콘테스트코리아] AI 플랫폼 구축 경진대회
+[콘테스트코리아] 초·중·고 AI 디지털콘텐츠 경진대회
+[AtCoder] AtCoder Regular Contest++ 233
