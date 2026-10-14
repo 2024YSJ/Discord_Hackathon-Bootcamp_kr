@@ -3389,3 +3389,21 @@ KT클라우드부트캠프 AWS Azure 테라폼 및 도커 쿠버네티스까지 
 [AtCoder] AtCoder Beginner Contest 482
 [AtCoder] AtCoder Beginner Contest 483
 [LeetCode] Weekly Contest 525
+🇰🇷 [캠퍼스픽] 2026 Tech Discovery 실험실창업 경진대회 참가팀 모집
+Hello World AI 해커톤
+로봇자동화 엔지니어 부트캠프(협동로봇, PLC)
+AI개발자 엔지니어 양성과정 취업연계형 인공지능개발자 국비지원부트캠프
+자바국비지원교육 JAVA부트캠프에서 취업연계 받으며 교육비 지원까지
+[골드레벨 공인교육기관] 언리얼엔진5 부트캠프 - 아티스트 5기(우수교육생 100% 인턴십 연계)
+[골드레벨 공인교육기관] 언리얼엔진5 부트캠프 - 엔지니어 5기(우수교육학생 100% 인턴십 연계)
+[위비티/웹/모바일/IT] 2026 신한 스퀘어브릿지 대학생 창업 공모전 HERO IR
+[위비티/웹/모바일/IT] 2026 대구광역시 기후·환경·탄소중립 공공 데이터 AI 활용대회
+[위비티/과학/공학] 2026 신한 스퀘어브릿지 대학생 창업 공모전 HERO IR
+[콘테스트코리아] Hello World AI 해커톤
+[콘테스트코리아] 2026 경상북도 K-U시티 청년 AI영상제
+[콘테스트코리아] [활동비·상금 2,000만원 상당 지원] 기업의 실제 문제를 AI로 해결할 프로젝트팀 모집
+[콘테스트코리아] 해커온 크루 1기
+[K-Startup] 2026 산업단지 오픈이노베이션프로그램 KICXUP 챌린지 & 로컬 스타트업 2차 모집 공고
+[Codeforces] WorldQuant Round 1 (Codeforces Round 1128, Div. 1 + Div. 2)
+[CodeChef] Placement Prep Weekends - 12
+[CodeChef] Monday Munch - DSA Challenge 025 (Rated)
