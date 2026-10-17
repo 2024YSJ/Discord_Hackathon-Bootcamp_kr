@@ -3445,3 +3445,16 @@ Name That LLM
 [Devfolio] Syntax Error 2026
 [Devfolio] Version Beta 9.0
 [AtCoder] SMBC Programming Contest #2 (AtCoder Beginner Contest 481）
+Cosmo Hacks 2026
+Bloom x Anthropic x Seoul AI Hub | Ambition for Korea 해커톤
+2026 서울 AI 디지털 배움터 청년 해커톤
+KT클라우드 취업연계형 클라우드엔지니어 부트캠프 - 100% 온라인 라이브 국비교육
+(강남역)-KT클라우드 :: AI 데이터센터 인프라 엔지니어 GPU 양성 부트캠프(교육비지원)
+2026/11/09 개강 AI × 클라우드 네이티브 백엔드 부트캠프
+SM유니버스 직접 주관 "버츄얼/메타버스" IT개발자 부트캠프
+KT클라우드 인프라 실시간 온라인 취업교육 부트캠프
+[위비티/게임/SW] 2026 조달청 AI 게임·콘텐츠 공모전
+[콘테스트코리아] [쌍용강북교육센터] 11/11·12/28 개강｜코딩이 처음이어도, 기초부터 취업까지_AI 실무형 클라우드 백엔드 취업 부트캠프
+[기업마당] 6G 서비스 시나리오 공모전 - 6G 시연 기획 Track 공고
+[기업마당] 6G 서비스 시나리오 공모전 - 6G 예상 시나리오 Track 공고
+[Devfolio] AgentVerse
