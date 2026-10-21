@@ -3487,3 +3487,23 @@ AI부트캠프 AI엔지니어 비전공 취업연계 국비지원교육
 [콘테스트코리아] 제조ㆍ엔지니어링 AI 실전 적용과 업무혁신 전략 세미나
 [기업마당] 2026년 동남권 멀티도메인 모빌리티 비즈니스 해커톤 참가자 모집 수정 공고(지역혁신클러스터육성(비R&D)사업)
 [AtCoder] AtCoder Beginner Contest 484
+Ostad Presents YUNet AIgnite Buildathon 2026
+Cal Hacks 13.0
+🇰🇷 [캠퍼스픽] DIGITAL EXCELLENCE AWARDS 2026
+[인천테크노파크] 2026 인천 가상융합산업 모의 해커톤 참여자 모집
+2026 크라우드 소싱 데이터 활용 해커톤 (드론 데이터 변화탐지·3D 모델링)
+임베디드 취업 부트캠프, 취업률 97%이상 _ 경기도 안산
+강남) KT클라우드 데이터센터 클라우드 인프라 부트캠프
+[90일 울산] 청년 창업부트캠프 2기 · 지원금 100만원
+20대 후반 30대초반 취업연계 정부지원 IT부트캠프 교육
+신림 IT국비지원 컴퓨터취업연계 지원되는 개발자 정보보안 클라우드 교육
+[내배카드 10월 27일 개강] AI 에이전트 서비스 개발자 부트캠프 - RAG, MCP, MLOps
+[위비티/웹/모바일/IT] 현대자동차그룹 차량용 앱 개발 공모전
+[위비티/웹/모바일/IT] 2026 AI 플레이 콘텐츠 제작 공모전
+[콘테스트코리아] 나무엑스 AI 숏폼 공모전
+[콘테스트코리아] 서울특별시 행정서식, 뚝딱뚝딱! 개선 아이디어 공모전
+[K-Startup] 2026 의왕시 청년e-Room 창업아이디어 공모전 참가자 모집
+[Devfolio] Lean In Hacks 8.0
+[Codeforces] ICPC 2026 Online Challenge 2 powered by Huawei
+[LeetCode] Biweekly Contest 195
+[LeetCode] Weekly Contest 526
