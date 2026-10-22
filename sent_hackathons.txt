@@ -3507,3 +3507,34 @@ Cal Hacks 13.0
 [Codeforces] ICPC 2026 Online Challenge 2 powered by Huawei
 [LeetCode] Biweekly Contest 195
 [LeetCode] Weekly Contest 526
+🇰🇷 [데브이벤트] 젝커톤 2026 | 젝트 X 스위프 AI 해커톤
+🇰🇷 [캠퍼스픽] 현대자동차그룹 차량용 앱 개발 공모전
+2026 한림 G-Lab@동해 AI활용 지역문제해결 해커톤
+2026년 장애인 분야 해커톤 대회 (장애 플러스 기술) 시민평가단 모집
+젝커톤 2026 | 젝트 X 스위프 AI 해커톤
+OPEN HARBOR 2026 | 글로벌 창업 AI 해커톤
+나랏돈 50조 찾기 나라장터 해커톤
+2026 제주 환경 해커톤
+실무형 서포터즈 SNS 마케팅 부트캠프 2026-2기 모집
+[강남역교육]- 데이터센터 엔지니어, 비전공자도 취업까지 준비 가능한 [KT클라우드부트캠프]
+내일배움카드로 배울 수 있는 교육종류 개발자 AI 정보보안 클라우드
+국비지원교육종류 IT계열취업 가능한 부트캠프
+부트캠프 세일즈 인턴
+KT클라우드 인프라 온라인 부트캠프_추가모집 이번주까지만!
+[IBM 부트캠프] 클라우드 네이티브 AI 에이전트 교육과정 (온+오프라인 혼합과정)
+[위비티/웹/모바일/IT] 2026년도 대한민국 SW기술대상 및 IT 아키텍처대상
+[위비티/웹/모바일/IT] 2026 한림 G-Lab@동해 AI활용 지역문제해결 해커톤
+[위비티/웹/모바일/IT] 2026 AI 해킹 방어 대회(ACDC) 참가자 모집
+[위비티/웹/모바일/IT] AI 달인의 꿀팁 챌린지 시즌3
+[콘테스트코리아] 세종 청년의 내일, 일자리 아이디어 공모전
+[콘테스트코리아] 사회보장 데이터를 활용한 AI 혁신 아이디어 경진대회
+[콘테스트코리아] 한국세라믹기술원 AI 영상 공모전 「세라믹이 사라진 세상」
+[콘테스트코리아] [산사람 x AI-Kive] 진짜 오타쿠 AI MV 챌린지
+[기업마당] 2026년 호남권 AX랩 지능형농업 데이터 활용 경진대회 공고(AI융합 지능형 농업 생태계 구축 사업)
+[Devfolio] Unbuilt
+[Devfolio] THE BIG HACK 2.0
+Squares in Squares
+[Codeforces] Codeforces Round 1131 (Div. 3)
+[Codeforces] Codeforces Round 1130 (Div. 2)
+[Codeforces] Codeforces Round 1129 (Div. 2)
+[CodeChef] Placement Prep Weekends - 13
