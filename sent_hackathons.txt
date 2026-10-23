@@ -3538,3 +3538,17 @@ Squares in Squares
 [Codeforces] Codeforces Round 1130 (Div. 2)
 [Codeforces] Codeforces Round 1129 (Div. 2)
 [CodeChef] Placement Prep Weekends - 13
+BDBI x SpaceXSI Grokathon
+🇰🇷 [캠퍼스픽] OPEN HARBOR 2026 | 글로벌 창업 AI 해커톤
+IT관련직업 취업스펙 업무능력, 포트폴리오 및 취업지원까지 제공되는 국비지원
+서초역-KT클라우드- 데이터센터 인프라 엔지니어 양성과정 - 취업부트캠프
+『2026년 제1회 디지털 헬스케어 부트캠프』 참가자 모집
+[멋쟁이사자처럼] 백엔드 JAVA&SPRING 부트캠프 29기
+[위비티/웹/모바일/IT] 선샤인 TIME TRAVEL 숏폼 영상 공모전
+[콘테스트코리아] [수상자 발표] 2026 고성 해양심층수 브랜드 AI 영상 공모전
+[콘테스트코리아] 년 NIA 탄소중립 혁신 아이디어 공모전
+[콘테스트코리아] [제10회 모모전] 현대모비스 창립 50주년 굿즈 아이디어 공모전
+[콘테스트코리아] 청소년·청년 디지털 메타버스 AI 외교관 17기 모집
+[콘테스트코리아] 해커스 그래머 게이트웨이 크리에이터 5기 모집
+Google Quantum AI - Verifiable Quantum Circuit Compilation
+[CodeChef] Monday Munch - DSA Challenge 026 (Rated)
