@@ -3619,3 +3619,25 @@ IceHacks
 [콘테스트코리아] The 6th Incheon Airport Travel Contest "Korea, Made by You"
 [콘테스트코리아] 2026 사회보장 데이터를 활용한 AI 혁신 아이디어 경진대회
 [콘테스트코리아] 하나은행 『하나원픽 CUP AI 게임창작대회』
+#BuildHybridAI 2026
+🇰🇷 [캠퍼스픽] LOTTE AX CHALLENGE 2026
+[선착순 30명 | 참가비 무료] “AI로 아이디어를 글로벌 비즈니스로!” KU 캠퍼스타운 AI 글로벌 해커톤
+[총상금 1,500만 원] 2026 AI 활용 전국 대학생 창업 해커톤 대회 참가자 모집
+[접수 기간 연장] 2026 크라우드 소싱 데이터 활용 해커톤 (드론 데이터 변화탐지·3D 모델링)
+[내배카드 11월 24일 개강] AI Shift 서비스 개발자 부트캠프
+임베디드 국비지원 교육 부트캠프 _ 추가모집 이번주까지만!
+메가존) KDT수료자도 참여가능 클라우드 취업 부트캠프
+AI데이터센터 클라우드 인프라 전액 국비지원 부트캠프
+고졸취업 IT계열직업으로 정부지원 받으면서 취업까지 해결
+[내배카드 11월 24일 개강] AI 에이전트 서비스 개발자 부트캠프 - RAG, MCP, MLOps
+[콘테스트코리아] 「다시, 다리다」 유휴공간 활성화 아이디어 공모전
+[콘테스트코리아] [한국인터넷진흥원] 슬로건·캐릭터·사업 아이디어 공모!
+[K-Startup] 2026 연구개발특구 딥테크 스타트업 챌린지 Final Day 행사 사전접수
+WebClone Mania
+CodeHive Community Duel Night
+Reverse Coding X
+HexWartz
+Vidyutspanda - Hardware Hackathon
+Pixels To Prognosis
+Rack It Up 2026: 48-Hour Online Hackathon by Rack'Em
+[CodeChef] Monday Munch - DSA Challenge 027 (Rated)
