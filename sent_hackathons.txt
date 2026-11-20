@@ -3691,3 +3691,129 @@ AI Agents for Founders Challenge — HETIC 2026
 [콘테스트코리아] 스마트시티(지식서비스산업) 아이디어 경진대회
 [콘테스트코리아] 2026 경산시 AI 미디어 콘텐츠 공모전 「AI·스마트도시·YOUR STORY」
 Project Last Mile: Analytics Case Challenge
+Global AI Builder’s Challenge
+The Dawn of Superintelligence | Kaya AI Grand Challenge 
+CrossPointX 2026
+EvoHacks 2
+🇰🇷 [데브이벤트] 2026 현장문제 AX 업무혁신 아이디어 해커톤
+🇰🇷 [데브이벤트] 2026 사회보장 데이터를 활용한 AI 혁신 아이디어 경진대회
+🇰🇷 [데브이벤트] Notion AI Hackathon Seoul
+🇰🇷 [데브이벤트] TripPups AI Game Hackathon 2026
+🇰🇷 [데브이벤트] 2026 SVC Seoul AI 해커톤 | 현대건설과 함께하는 주거생활 AI 아이디어
+🇰🇷 [데브이벤트] 2026 창업도시 프로젝트 지역문제 해결형 AI활용 경진대회 (대구 로컬 AI 그라운드)
+🇰🇷 [데브이벤트] Hack the Audience 2026: Creator-to-CEO Hackathon
+🇰🇷 [데브이벤트] Capture, Explain, Defend — AI Cybersecurity Hackathon
+🎓 [데브이벤트] 아이펠 AI 리서처 20기 (AI 논문 연구 심화 부트캠프)
+🇰🇷 [캠퍼스픽] 2027 MOBIS Robotics Challenge 참가자 모집
+🇰🇷 [캠퍼스픽] 『2026 SVC Seoul 현대건설 AI 해커톤』|  주거생활 AI
+🇰🇷 [캠퍼스픽] [2026 서울관광 프롬프톤] 참가자모집
+🇰🇷 [캠퍼스픽] 2026 제천시장배 전국 e-스포츠 대회
+[울산] 코딩 몰라도 OK, 1박 2일 AI 해커톤 INNO-CODER (총상금 200만 원·무료)
+2027 제 2회 Superb AI X BDAI Vision AI 해커톤
+「신한 스퀘어브릿지 청년 해커톤」 4기 참가자 모집(~11/22)
+『2026 SVC Seoul AI 해커톤』 | 현대건설과 함께하는 주거생활 AI 아이디어 도전
+국비 한번 더!! 메가존x새싹 클라우드엔지니어 취업부트캠프
+[국비무료/비전공자 특화] 강사만족도 4.9점! 기초부터 취업까지 한번에~ AI데이터분석 기반 서비스 기획 및 개발 마스터 부트캠프(~11/23)
+[LG U+ Why Not SW Camp] 데이터분석·AI·클라우드 실무 부트캠프 | 국비지원
+국내 유일 MCU기반 임베디드&펌웨어 국비교육 부트캠프
+국비 한번 더! 새싹x메가존 클라우드 부트캠프
+[국비무료/비전공자 특화] 강사만족도 4.8점! 기초부터 취업까지 한번에~ AI데이터분석 기반 서비스 기획 및 개발 마스터 부트캠프(~11/23)
+[멋쟁이사자처럼] AWS 클라우드 엔지니어링 부트캠프 10기
+생성형 AI 활용 웹디자인 & 웹퍼블리싱 취업 부트캠프
+마케팅회사취업, 광고 운영과 데이터 분석으로 완성하는 실무 포트폴리오
+[국비무료/비전공자 특화] 강사만족도 4.8점! 기초부터 취업까지 한번에~ AI데이터분석 기반 서비스 기획 및 개발 마스터 부트캠프(~11/15)
+AI 데이터센터엔지니어 국비지원 :: KT클라우드부트캠프 취업과정
+KDT수료자도 가능) 메가존x새싹 클라우드 엔지니어 전액무료 부트캠프
+[더존비즈온 부트캠프] Cloud DX Academy 클라우드 엔지니어 클래스 과정
+국비 추가 수강 가능한 IT 클라우드부트캠프 : 내배카 필요없는 교육
+요즘 대세는 데이터! 데이터 분석 부트캠프 60기 모집 (내일배움카드 95% 국비지원)
+HDC랩스 AIoT 부트캠프
+교육 운영기획 매니저 채용연계형 인턴 (AI·IT 부트캠프)
+커리큘럼 기획 매니저 채용연계형 인턴 (AI·IT 부트캠프)
+멀티캠퍼스 부트캠프 AI.M [아이:엠]  3기
+kt클라우드부트캠프 ai 데이터센터로 취업 가능한 엔지니어 교육
+AI MSP 베스핀글로벌의 멀티클라우드 엔지니어 부트캠프 7기
+[모두의연구소] 2027년 이직 준비하는 직장인 필독! 데이터 분석 X Claude 9주 부트캠프 ⛺
+[내배카드 12월 22일 개강] AI 에이전트 서비스 개발자 부트캠프 - RAG, MCP, MLOps
+훈련비국비지원▶26/11/23 개강_생성형 AI 에이전트 기반 클라우드 백엔드 개발자 부트캠프
+[강남AI학원] LG U+ Why Not SW Camp_데이터분석·클라우드·AI 부트캠프
+청년취업사관학교 국비수료자 지원, 새싹에서 IT취업 다시 준비하기
+[멋쟁이사자처럼] 10주 완성 AI NLP 엔지니어 부트캠프 7기
+[모두의연구소] 올 겨울부터 ‘AI 연구 경험’ 쌓고, 내년 취업 미리 대비하자 ! 아이펠 AI 연구 심화 부트캠프 20기
+국민내일배움카드 교육 종류, 취업 준비에 필요한 IT 과정 알아보기
+서울개발자국비지원 :: AI 기반 취업연계 부트캠프
+제조AI부트캠프 - 생성형AI/빅데이터 실무데이터분석
+AI를 활용한 메타버스 Unity 게임 부트캠프 18기
+[전액무료] AI 융합형 K-컬처 굿즈 비즈니스 올인원 MD 실전 부트캠프 교육생 모집(~11/30)
+[100% 국비지원] 성균관대학교 피지컬 AI 데이터 실무 부트캠프 교육생 모집
+IT 취업 준비, 실무 기술부터 포트폴리오까지 한 번에
+[인턴연계] 제조AI부트캠프- 생성형AI/빅데이터 실무데이터분석 4기
+[우테코] 📄우아한테크코스 2026 리크루팅데이 참여 기업 모집이벤트2026.11.03
+[위비티/웹/모바일/IT] VIVID RE:PLAY 6개 IP로 만드는 AI영상 공모전
+[위비티/웹/모바일/IT] 2026년 서울교육 AI 활용 공모전
+[위비티/웹/모바일/IT] 2026 서울관광 프롬프톤
+[위비티/웹/모바일/IT] 세종사이버대학교 전국민 AI 공모전 (AI 불씨)
+[위비티/웹/모바일/IT] 2026 대구 로컬AI그라운드 - 지역문제 해결형 AI활용 경진대회
+[위비티/웹/모바일/IT] [한국체육산업개발(주)] 공공데이터 활용 경진대회
+[위비티/웹/모바일/IT] AI 달인의 꿀팁 챌린지 시즌4
+[위비티/게임/SW] 일상 속 아이디어를 AI로 웹·앱 서비스로! INNO-CODER AI HACKATHON 참가팀 모집
+[위비티/게임/SW] 2026 제천시장배 전국 e-스포츠 대회
+[위비티/게임/SW] 디어비 글로벌 런칭 공모전
+[위비티/게임/SW] 2026 saaskr 게임 어워드 - AI로 만든 웹게임 연말 시상
+[위비티/과학/공학] 2026 강원 차세대 과학전문가상 공모전
+[위비티/과학/공학] 2027 MOBIS Robotics Challenge - 현대모비스 로보틱스 경진대회
+[위비티/과학/공학] 2026 국가시범도시 AI 아이디어 · 기술 공모전
+[콘테스트코리아] 제 3회 스마트그리드 아이디어 공모전
+[콘테스트코리아] (사)한국화훼자조금협의회 30초 AI 영상 광고제
+[콘테스트코리아] 춘천MBC AI영상 공모전
+[콘테스트코리아] TripPups AI Game Hackathon 2026
+[콘테스트코리아] 동그라미재단 AI 아카데미 10기
+[콘테스트코리아] 2026 디지털 이노베이션 인사이트(Tech-Day)에 초대합니다.
+[콘테스트코리아] 입에온 영어 단어 숙어 말하기 앱 1개월 무료 이용권 체험단 100명 모집
+[콘테스트코리아] 2026 창업도시 프로젝트 <지역문제 해결형 AI활용 경진대회>
+[콘테스트코리아] 2026 국가시범도시 AI 아이디어 · 기술 공모전
+[콘테스트코리아] [새싹x메가존클라우드] AI클라우드 엔지니어 양성과정
+[K-Startup] 「올해의 K-스타트업 2026」 창업경진대회 왕중왕전 청중평가단 모집 올해의 K-스타트업(舊. 도전! K-스타트업) 창업진흥원 조회 6,691
+MyOnne National Bug Bounty Challenge 2026
+CircuitX
+Campus to Cloud Hackathon
+Anveshak: Open-World Object Detection for Remote Sensing
+Nurn 2026 – National Innovation & Technology Challenge
+SustainIQ
+CPP - Competitive Programming Potpourri
+Skill Hackathon 2027
+TrueFoundry Forge-a-thon | Techfest, IIT Bombay 2026-27
+Incursion 2027 24-Hour National Level Hackathon
+[Devfolio] CODEFESTTHON 2026
+[Devfolio] Code N Mod
+[Devfolio] Founders' House Kolkata
+[Devfolio] MakerSpark
+[Devfolio] Clash of Commits
+[Devfolio] Health Hackathon 3.0
+[Devfolio] ETHChiangmai & Longevity Hackathon 2026
+[Devfolio] Hacksprint 3.0
+[Devfolio] Innerve 11.0
+[Devfolio] GOA BUILDATHON 27
+[Devfolio] Techacks 5.0
+[Devfolio] doubleSlash 5.0
+[Devfolio] Diversion 2k27
+Santa 2026 - The Elf Calculator
+Google - Agent Harness on Physical-Engineering's Last Exam
+[Codeforces] Codeforces Round 1137 (Div. 2)
+[Codeforces] Codeforces Round 1136 (Div. 1)
+[Codeforces] Codeforces Round 1136 (Div. 2)
+[AtCoder] AtCoder Beginner Contest 486
+[AtCoder] AtCoder Heuristic Contest 075
+[AtCoder] AtCoder Beginner Contest 487
+[AtCoder] AtCoder Beginner Contest 488
+[AtCoder] AtCoder Grand Contest 080
+[AtCoder] UNIQUE VISION Programming Contest 2026 (ChristmasAtCoder Beginner Contest 489)
+[AtCoder] AtCoder Grand Contest 081
+[AtCoder] AtCoder Grand Contest 082
+[AtCoder] AtCoder Grand Contest 083
+[LeetCode] Biweekly Contest 197
+[LeetCode] Weekly Contest 530
+[LeetCode] Weekly Contest 529
+[LeetCode] Biweekly Contest 196
+[CodeChef] Monday Munch - DSA Challenge 030 (Rated)
+[CodeChef] Starters 266
