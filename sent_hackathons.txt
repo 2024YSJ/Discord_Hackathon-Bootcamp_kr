@@ -3876,3 +3876,42 @@ Claude Build Challenge 2026
 AWS Winter League 2026
 [Devfolio] Winter of Code 6.0
 [Devfolio] HACK2027
+The Dawn of Superintelligence | Kaya AI Grand Challenge 
+Brewing Codes 4.0
+🇰🇷 [데브이벤트] Build with Qwen: AutoRAG Hackathon 2026
+🇰🇷 [데브이벤트] ForwardThon 2026 — 기업의 숫자를 바꾸는 FDE 해커톤
+🇰🇷 [데브이벤트] 오렌지파크 해커톤 | 아이디어를 MVP로, 첫 고객을 만나기
+🇰🇷 [데브이벤트] HSK Chain Horizon Hackathon · Seoul
+🇰🇷 [데브이벤트] 2026 서울 야간경제 활성화 해커톤 (Dopamine Seoul 24)
+🇰🇷 [데브이벤트] 2026 강원 AI 창업아이디어 경진대회
+🇰🇷 [데브이벤트] 2026 AI학과 공모전 「일상의 편리를 위한 AI서비스개발」 (세종사이버대학교)
+🇰🇷 [데브이벤트] 2026 국가시범도시 AI 아이디어·기술 공모전
+🇰🇷 [데브이벤트] 2027 제 2회 Superb AI X BDAI Vision AI Hackathon
+클라우드 엔지니어 부트캠프, 실시간 온라인으로 배우는 멀티클라우드 실무
+대구가톨릭대학교 청년도약 인재양성 부트캠프 교육생 모집
+(방학단기) AI AX 에이전트 엔지니어 심화 취업부트캠프 - KDT수료자 가능
+kt클라우드부트캠프 AWS 엔지니어 교육, 집에서 실시간 온라인으로 취업 준비
+KT클라우드 인프라 부트캠프 [실시간 온라인]
+KT클라우드 데이터센터 클라우드 인프라 전액 국비부트캠프
+국비 한번 더 _ 메가존x새싹 클라우드 부트캠프
+[위비티/웹/모바일/IT] Build with Qwen: AutoRAG Hackathon 2026
+[콘테스트코리아] SOURCE MUSIC DAILY AUDITION
+[콘테스트코리아] 제1회 서울국제AI광고영상제 SIADAFF
+[콘테스트코리아] 2026 서울 야간경제 활성화 해커톤 (Dopamine Seoul 24)
+[콘테스트코리아] 입에온 영어 단어 숙어 앱 체험단 모집 7일 써 보고 설문 답하면 3개월 이용권
+[콘테스트코리아] 해커스자격증 서포터즈 2기 모집
+[K-Startup] 2026년 초기창업패키지 로켓십 IR 경진대회 참가기업 모집 (4회차: 자율 분야)
+OpenVerse '26
+BlackPanda Labs CTF 2026 | Free International Cybersecurity Competition
+India AI Open 2026: Free AI Talent Contest for Students and Engineers
+Codathon
+AgentX
+Fourth Wall'26
+Adaptics - Open Innovation Hackathon
+Hack The Hardware
+Starlight Arena - AI Red Teaming Competition
+Agentic Arena
+[Devfolio] ABHYUDAYA 2026
+Generalist Gaming Agent
+[Codeforces] Educational Codeforces Round 197 (Rated for Div. 2)
+[Codeforces] Codeforces Round 1138 (Div. 3)
